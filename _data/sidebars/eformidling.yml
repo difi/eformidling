@@ -1,0 +1,36 @@
+entries:
+- title: eFormidling
+  product: eFormidling
+  version:
+  folders:
+
+  
+  - title: Bakgrunn
+    output: web, pdf
+    folderitems:
+
+      - title: Introduksjon
+        url: /index.html
+        output: web,pdf
+
+      - title: Hvordan komme igang?
+        url: /get_started.html
+        output: web,pdf
+
+      - title: Arkitektur
+        url: /architecture.html
+        output: web,pdf
+
+      - title: Begreper
+        url: /terms.html
+        output: web,pdf
+
+  - title: Integrasjonspunktet
+    output: web, pdf
+    folderitems: 
+
+      - title: Grensesnitt
+        url: /api.html
+        output: web,pdf
+
+
