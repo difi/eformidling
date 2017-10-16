@@ -10,4 +10,10 @@ sidebar: eformidling
 
 ## Grensesnitt
 
-Under arbeid
+Integrasjonpunktet støtter meldingsformidling via 3 apier; BestEdu, MXA og NextMove
+
+# BestEdu
+
+# MXA
+
+# NextMove
