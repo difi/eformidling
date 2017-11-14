@@ -1,13 +1,11 @@
 ---
-title: Integrasjonspunktet
+title: Meldingsflyt
 description: Bakgrunnsinformajon om integrasjonspunktet
 summary: "Litt meta-info om disse sidene"
-permalink: about.html
+permalink: messagesflow.html
 
 layout: page
 sidebar: eformidling
 ---
 
-## to Kryss
-
-# ett kryss
+## 
