@@ -50,7 +50,7 @@ NextMove
 : Neste generasjons grensesnitt for meldingsutveksling fra offentlig. Mer informasjon [her][NextMoveInternlink]
 
 SR
-: Oppslagstjeneste brukt av integrasjonspunktet for adressering av meldinger
+: ServiceRegistry - Oppslagstjeneste brukt av integrasjonspunktet for adressering av meldinger
 
 
 
