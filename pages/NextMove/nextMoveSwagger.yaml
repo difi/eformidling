@@ -1,0 +1,890 @@
+
+
+
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Integrasjonspunkt API
+host: 'p360-test:9093'
+basePath: /
+tags:
+  - name: conversation-controller
+    description: Conversation Controller
+  - name: message-out-controller
+    description: Message Out Controller
+  - name: message-in-controller
+    description: Message In Controller
+paths:
+  /conversations:
+    get:
+      tags:
+        - conversation-controller
+      summary: Get all conversations
+      description: Gets a list of all conversations
+      operationId: conversationsUsingGET
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: finished
+          in: query
+          description: Filter conversations based on finished status
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Conversation'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /conversations/queue:
+    get:
+      tags:
+        - conversation-controller
+      summary: Queued conversations
+      description: Get all conversations with not-finished state
+      operationId: queuedConversationsUsingGET
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Conversation'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  '/conversations/{id}':
+    get:
+      tags:
+        - conversation-controller
+      summary: Find conversation
+      description: Find conversation based on id
+      operationId: conversationUsingGET
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: id
+          in: path
+          description: Conversation id
+          required: true
+          type: integer
+          format: int32
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/Conversation'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /in/messages:
+    get:
+      tags:
+        - message-in-controller
+      summary: Get all incoming messages
+      operationId: getIncomingMessagesUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: Service Identifier
+          required: false
+          type: string
+          enum:
+            - DPO
+            - DPV
+            - DPI
+            - DPF
+            - DPE_INNSYN
+            - DPE_DATA
+            - DPE_RECEIPT
+            - UNKNOWN
+        - name: conversationId
+          in: query
+          description: Conversation id
+          required: false
+          type: string
+        - name: senderId
+          in: query
+          description: Sender id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ConversationResource'
+        '204':
+          description: No countent
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+          schema:
+            type: string
+  /in/messages/peek:
+    get:
+      tags:
+        - message-in-controller
+      summary: Peek incoming queue
+      description: Gets the first message in the incoming queue
+      operationId: peekIncomingMessagesUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: Service Identifier
+          required: false
+          type: string
+          enum:
+            - DPO
+            - DPV
+            - DPI
+            - DPF
+            - DPE_INNSYN
+            - DPE_DATA
+            - DPE_RECEIPT
+            - UNKNOWN
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/ConversationResource'
+        '204':
+          description: No content
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /in/messages/pop:
+    get:
+      tags:
+        - message-in-controller
+      summary: Pop incoming queue
+      description: 'Gets the ASiC for the message in the queue, then removes the message'
+      operationId: popMessageUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: Service Identifier
+          required: false
+          type: string
+        - name: conversationId
+          in: query
+          description: conversationId
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/InputStreamResource'
+        '204':
+          description: No content
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      tags:
+        - message-in-controller
+      summary: Read incoming queue
+      description: 'Gets the ASiC for the first message in the queue, then locks the message from further processing'
+      operationId: readMessageUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: serviceIdentifier
+          required: false
+          type: string
+        - name: conversationId
+          in: query
+          description: conversationId
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/InputStreamResource'
+        '201':
+          description: Created
+        '204':
+          description: No content
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    put:
+      tags:
+        - message-in-controller
+      summary: Unlock message
+      description: Unlock the queued message
+      operationId: unlockMessageUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: serviceIdentifier
+          required: false
+          type: string
+        - name: conversationId
+          in: query
+          description: conversationId
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/InputStreamResource'
+        '201':
+          description: Created
+        '204':
+          description: No content
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    delete:
+      tags:
+        - message-in-controller
+      summary: Remove message
+      description: Delete the queued message
+      operationId: deleteMessageUsingDELETE_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: serviceIdentifier
+          in: query
+          description: serviceIdentifier
+          required: false
+          type: string
+        - name: conversationId
+          in: query
+          description: conversationId
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/InputStreamResource'
+        '204':
+          description: No content
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+  /out/messages:
+    get:
+      tags:
+        - message-out-controller
+      summary: Get all outgoing messages
+      operationId: getAllResourcesUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: receiverId
+          in: query
+          description: Receiver id
+          required: false
+          type: string
+        - name: serviceIdentifier
+          in: query
+          description: Service Identifier
+          required: false
+          type: string
+          enum:
+            - DPO
+            - DPV
+            - DPI
+            - DPF
+            - DPE_INNSYN
+            - DPE_DATA
+            - DPE_RECEIPT
+            - UNKNOWN
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ConversationResource'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      tags:
+        - message-out-controller
+      summary: Create conversation
+      description: Create a new conversation with the given values
+      operationId: createResourceUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: cr
+          description: cr
+          required: true
+          schema:
+            $ref: '#/definitions/ConversationResource'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/ConversationResource'
+        '201':
+          description: Created
+        '400':
+          description: Bad request
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  '/out/messages/{conversationId}':
+    get:
+      tags:
+        - message-out-controller
+      summary: Find message
+      description: Find message with given conversation id
+      operationId: getStatusForMessageUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: conversationId
+          in: path
+          description: Conversation id
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/ConversationResource'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      tags:
+        - message-out-controller
+      summary: Upload files and send
+      description: Upload files to a conversation and send
+      operationId: uploadFilesUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: conversationId
+          in: path
+          description: Conversation id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: string
+        '201':
+          description: Created
+        '400':
+          description: Bad request
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+          schema:
+            type: string
+        '500':
+          description: Internal error
+          schema:
+            type: string
+  '/out/types/{identifier}':
+    get:
+      tags:
+        - message-out-controller
+      summary: Supported message types
+      description: Get a list of supported message types for this endpoint
+      operationId: getTypesUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: identifier
+          in: path
+          description: Identifier
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+          schema:
+            type: string
+  /statuses:
+    get:
+      tags:
+        - conversation-controller
+      summary: Get all statuses
+      description: Get a list of all statuses with given parameters
+      operationId: statusesUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: fromId
+          in: query
+          description: Get all statuses with id equals to given value and higher
+          required: false
+          type: integer
+          format: int32
+        - name: convId
+          in: query
+          description: Get all statuses with given convId
+          required: false
+          type: integer
+          format: int32
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/MessageStatus'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /statuses/peek:
+    get:
+      tags:
+        - conversation-controller
+      summary: Latest status
+      description: Get status with latest update
+      operationId: statusPeekUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/MessageStatus'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  '/statuses/{id}':
+    get:
+      tags:
+        - conversation-controller
+      summary: Find status
+      description: Find status with given id
+      operationId: statusUsingGET
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: id
+          in: path
+          description: Status id
+          required: true
+          type: integer
+          format: int32
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/MessageStatus'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+definitions:
+  MessageStatus:
+    type: object
+    properties:
+      convId:
+        type: integer
+        format: int32
+      conversationId:
+        type: string
+      description:
+        type: string
+      lastUpdate:
+        type: string
+      rawReceipt:
+        type: string
+      statId:
+        type: integer
+        format: int32
+      status:
+        type: string
+  ResponseEntity:
+    type: object
+    properties:
+      body:
+        type: object
+      statusCode:
+        type: string
+        enum:
+          - '100'
+          - '101'
+          - '102'
+          - '103'
+          - '200'
+          - '201'
+          - '202'
+          - '203'
+          - '204'
+          - '205'
+          - '206'
+          - '207'
+          - '208'
+          - '226'
+          - '300'
+          - '301'
+          - '302'
+          - '303'
+          - '304'
+          - '305'
+          - '307'
+          - '308'
+          - '400'
+          - '401'
+          - '402'
+          - '403'
+          - '404'
+          - '405'
+          - '406'
+          - '407'
+          - '408'
+          - '409'
+          - '410'
+          - '411'
+          - '412'
+          - '413'
+          - '414'
+          - '415'
+          - '416'
+          - '417'
+          - '418'
+          - '419'
+          - '420'
+          - '421'
+          - '422'
+          - '423'
+          - '424'
+          - '426'
+          - '428'
+          - '429'
+          - '431'
+          - '451'
+          - '500'
+          - '501'
+          - '502'
+          - '503'
+          - '504'
+          - '505'
+          - '506'
+          - '507'
+          - '508'
+          - '509'
+          - '510'
+          - '511'
+      statusCodeValue:
+        type: integer
+        format: int32
+  ConversationResource:
+    type: object
+    properties:
+      conversationId:
+        type: string
+      customProperties:
+        type: object
+        additionalProperties:
+          type: string
+      fileRefs:
+        type: object
+        additionalProperties:
+          type: string
+      lastUpdate:
+        type: string
+      receiverId:
+        type: string
+      receiverName:
+        type: string
+      senderId:
+        type: string
+      senderName:
+        type: string
+      serviceIdentifier:
+        type: string
+        enum:
+          - DPO
+          - DPV
+          - DPI
+          - DPF
+          - DPE_INNSYN
+          - DPE_DATA
+          - DPE_RECEIPT
+          - UNKNOWN
+  InputStream:
+    type: object
+  Conversation:
+    type: object
+    properties:
+      convId:
+        type: integer
+        format: int32
+      conversationId:
+        type: string
+      finished:
+        type: boolean
+      lastUpdate:
+        type: string
+      messageReference:
+        type: string
+      messageStatuses:
+        type: array
+        items:
+          $ref: '#/definitions/MessageStatus'
+      messageTitle:
+        type: string
+      receiverIdentifier:
+        type: string
+      serviceIdentifier:
+        type: string
+        enum:
+          - DPO
+          - DPV
+          - DPI
+          - DPF
+          - DPE_INNSYN
+          - DPE_DATA
+          - DPE_RECEIPT
+          - UNKNOWN
+  File:
+    type: object
+    properties:
+      absolute:
+        type: boolean
+      absoluteFile:
+        type: file
+      absolutePath:
+        type: string
+      canonicalFile:
+        type: file
+      canonicalPath:
+        type: string
+      directory:
+        type: boolean
+      file:
+        type: boolean
+      freeSpace:
+        type: integer
+        format: int64
+      hidden:
+        type: boolean
+      name:
+        type: string
+      parent:
+        type: string
+      parentFile:
+        type: file
+      path:
+        type: string
+      totalSpace:
+        type: integer
+        format: int64
+      usableSpace:
+        type: integer
+        format: int64
+  URI:
+    type: object
+    properties:
+      absolute:
+        type: boolean
+      authority:
+        type: string
+      fragment:
+        type: string
+      host:
+        type: string
+      opaque:
+        type: boolean
+      path:
+        type: string
+      port:
+        type: integer
+        format: int32
+      query:
+        type: string
+      rawAuthority:
+        type: string
+      rawFragment:
+        type: string
+      rawPath:
+        type: string
+      rawQuery:
+        type: string
+      rawSchemeSpecificPart:
+        type: string
+      rawUserInfo:
+        type: string
+      scheme:
+        type: string
+      schemeSpecificPart:
+        type: string
+      userInfo:
+        type: string
+  URL:
+    type: object
+    properties:
+      authority:
+        type: string
+      content:
+        type: object
+      defaultPort:
+        type: integer
+        format: int32
+      file:
+        type: string
+      host:
+        type: string
+      path:
+        type: string
+      port:
+        type: integer
+        format: int32
+      protocol:
+        type: string
+      query:
+        type: string
+      ref:
+        type: string
+      userInfo:
+        type: string
+  InputStreamResource:
+    type: object
+    properties:
+      description:
+        type: string
+      file:
+        type: file
+      filename:
+        type: string
+      inputStream:
+        $ref: '#/definitions/InputStream'
+      open:
+        type: boolean
+      readable:
+        type: boolean
+      uri:
+        $ref: '#/definitions/URI'
+      url:
+        $ref: '#/definitions/URL'

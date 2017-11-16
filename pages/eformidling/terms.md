@@ -1,7 +1,7 @@
 ---
 title: Begrep
 description: Begrep og forkortelser brukt i eFormidling
-summary: "Begrep og forkorteser"
+summary: "Begrep og forkorteser brukt i eFormidling"
 permalink: terms.html
 
 layout: page
