@@ -33,4 +33,8 @@ entries:
         url: /api.html
         output: web,pdf
 
+        title: meldingstyper
+        url: /messagetypes.html
+        output: web
+
 

@@ -5,6 +5,7 @@ permalink: about.html
 
 layout: page
 sidebar: eformidling
+foler: NextMove
 ---
 
 # Virksomhet

@@ -3,9 +3,9 @@ title: Om disse sidene
 description: Om disse sidene
 summary: "Litt meta-info om disse sidene"
 permalink: aboutthesite.html
-
 layout: page
 sidebar: eformidling
+folder: eformidling
 ---
 
 ## Om sidene

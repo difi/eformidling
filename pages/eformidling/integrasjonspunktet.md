@@ -3,10 +3,9 @@ title: Integrasjonspunktet
 description: Beskrivelse av integrasjonspunktets funksjon
 summary: "Beskrivelse av integrasjonspunktets funksjon"
 permalink: integrasjonspunktet.html
-
 layout: page
 sidebar: eformidling
-isHome: true
+folder: eformidling
 ---
 
 ## Integrasjonspunktet
