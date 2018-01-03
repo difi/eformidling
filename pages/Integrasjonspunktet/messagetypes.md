@@ -68,7 +68,6 @@ sequenceDiagram
     participant ipa as Integrasjonspunkt 
     participant sr as ServiceRegistry
     participant msh as MSH
-    participant mf  as MSH formidlingstjeneste
     participant mshm as MSH
     participant ipm as Integrasjonspunkt mottaker
     participant sam as SakArkiv mottaker
