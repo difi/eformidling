@@ -15,6 +15,7 @@ En generell flyt der asynkronitet, autentisering/autorisering og statusdatabase 
 Oppslaget for adrressering er også generalisert ved komponenten ServiceRegistry (SR). I virkligheten er skjer det i bakant av denne oppslag i en rekke register for å avgjøre hvordan meldingen skal routes. For nærmere beskrivelse se [ServiceRegistry](). 
 
 
+
 ## Digital post offentlige virksomheter (DPO)
 
 DPO meldinger er meldinger der både avsender og mottaker har integrasjonspunkt.
@@ -55,7 +56,8 @@ sequenceDiagram
 </div>
 
 
-## DPO med MSH
+
+### DPO med MSH
 
 Dersom man tar ibruk integrasjonspunktet og allerede har MSH med mottakere en kommuneiserer med over BestEdu i dag, vil integrasjonspunktet virke som en proxy mot eksisterende MSH.
 SR vil da returnere egenskapen DPV. Det gjøres da et ektra GetCanReceive mot msh, med påfølgende PutMessage dersom denne returnerer true. Mottakers Sak-/Arkivsystem svarer med AppReceipt over MSH infratstruktur, som tidligere.
@@ -90,30 +92,30 @@ sequenceDiagram
 </div>
 
 
+
 ## Digital post private virksomheter (DPV)
 
 DPV meldinger er meldinger sendt fra integrasjonspunktet til en virksomhets meldingsboks hos AltInn. Flyten initieres som ved DPO melding, men SR svarer med DPV egenskap. Meldingen mappes til en DPV melding og lastes opp til mottakes meldingsboks ved hjelp av AltInns webservice for dette. 
 Etter meldingen er levert sjekkes status på meldingen med en bachjobb. 
 
-
 <div class="mermaid">
 sequenceDiagram
-participant fs as SakArkiv
+    participant fs as SakArkiv
     participant ipa as Integrasjonspunkt 
     participant sr as ServiceRegistry
-    participant mf  as AltInn Meldingsformidler
+    participant mf as AltInn meldingsformidler
 
-    fs ->>ipa: GetCanReceive
+    fs->>ipa: GetCanReceive
     ipa->>sr: GetReceiver
-    sr-->>ipa: Receiver
-    ipa-->>fs :response
-    fs ->>ipa: PutMessage
+    sr-->>ipa: receiver
+    ipa-->>fs: response
+    fs->>ipa: PutMessage
     ipa->>mf: Send
-    mf-->>ipa: 
     loop time
         ipa->>mf: GetStatus
     end
-<div>
+</div>
+
 
 
 ## Digital post til mottaker på FIKS (DPF)
@@ -123,11 +125,11 @@ Etter meldingen er levert sjekkes status på meldingen med en bachjobb.
 
 Bruk av SvarUt og SvarInn forutsetter egen avtale med KS om dette. 
 
-Sende melding
+### Sende melding - SvarUt
 
 <div class="mermaid">
 sequenceDiagram
-    participant fs as Sak
+    participant fs as SakArkiv
     participant ip as Integrasjonspunkt 
     participant sr as ServiceRegistry
     participant mf  as SvarUt
@@ -147,7 +149,7 @@ sequenceDiagram
 Mottak av meldinger fra FIKS platformen skjer ved at en bachjobb sjekker etter nye meldinger ved hjelp av SvarInn tjenesten. Dersom det finnes nye meldinger lastes disse ned og leveres mottakers Sak-/Arkivsystem via BestEdu importtjeneste . Meldingens status uppdateres dersom til lest med SvarInn. 
 Dersom meldingen feiler ved levering via BestEdu kanalen sendes den mottakers postmottak med mail vi intern epost server. 
 
-Motta melding
+### Motta melding - SvarInn
 
 <div class="mermaid">
 sequenceDiagram
@@ -170,6 +172,7 @@ sequenceDiagram
         end
     end
 </div>
+
 
 
 ## Digital post til innbygger (DPI)
@@ -206,6 +209,7 @@ sequenceDiagram
         ip->>ip: UpdateReceiptsDB
     end 
 </div>
+
 
 
 ## Utvidet meldingsflyt
