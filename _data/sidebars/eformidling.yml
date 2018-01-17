@@ -37,4 +37,16 @@ entries:
         url: /messagetypes.html
         output: web
 
+  - title: NextMove
+    output: web
+    folderitems:
+
+      - title: Arkivmeldingen
+        url: /arkivmeldingen.html
+        output: web
+
+      - title: Meldingsflyt
+        url: /meldingsflyt.html
+        output: web
+
 
