@@ -54,7 +54,6 @@ sequenceDiagram
     end
 </div>
 
-
 ## DPO med MSH
 
 Dersom man tar ibruk integrasjonspunktet og allerede har MSH med mottakere en kommuneiserer med over BestEdu i dag, vil integrasjonspunktet virke som en proxy mot eksisterende MSH.
@@ -106,7 +105,7 @@ participant fs as SakArkiv
     fs ->>ipa: GetCanReceive
     ipa->>sr: GetReceiver
     sr-->>ipa: Receiver
-    ipa-->>fs :response
+    ipa-->>fs : Response
     fs ->>ipa: PutMessage
     ipa->>mf: Send
     mf-->>ipa: 
@@ -205,6 +204,82 @@ sequenceDiagram
         ip->>mf: GetRecieipt
         ip->>ip: UpdateReceiptsDB
     end 
+</div>
+
+## eInnsynsmeldinger
+
+<div class="mermaid">
+sequenceDiagram
+    participant saa as SakArkiv avsender
+    participant ei as eInnsynsklient
+    participant ipa as Integrasjonspunkt 
+    participant sr as ServiceRegistry
+    participant mf  as Azure SericeBus
+    participant ipm as Integrasjonspunkt mottaker
+    participant eim as eInnsyn
+
+    alt 0
+        saa->>ei: upload 
+        ei->>ipa: POST /out/messages
+    else 1
+        saa->>ipa: POST /out/messages
+    end
+    ipa->>sr: GetReceiver
+    sr-->>ipa: Receiver
+    ipa->>mf: Upload
+    loop time
+        opt NewMessageAvailable 
+            ipm->>mf: DownloadMessage
+            mf-->>ipm: Message
+        end
+    end
+    eim ->> ipm: GET /in/messages/peek
+    ipm-->> eim: MessageMetaData
+    eim->> ipm: GET /in/messages/pop
+    ipm-->> eim: Message
+</div>
+
+## Innsynsbegjæring
+
+<div class="mermaid">
+sequenceDiagram
+    participant eik as eInnsynsløsning    
+    participant ei as eInnsynklient    
+    participant ipa as Integrasjonspunkt 
+    participant sr as ServiceRegistry
+    participant mf  as Azure SericeBus    
+    participant ipm as Integrasjonspunkt mottaker  
+    participant eim as eInnsynsklient mottaker  
+    participant epm as Lokal SMTP server
+    participant pmm as Postmottak
+    participant sam as SakArkiv mottaker
+    
+
+    eik->>ei: Send
+    ei->>ipa: POST /out/messages
+    ipa->>sr: GetReceiver
+    sr-->>ipa: Receiver
+    ipa->>mf: Upload
+    loop time
+        opt NewMessageAvailable 
+            ipm->>mf: DownloadMessage
+            mf-->>ipm: Message
+        end
+    end
+    alt 0
+        eim->>ipm: GET /in/messages/peek
+        ipm-->>eim: MessageMetaData
+        eim->>ipm: GET /in/messages/pop
+        ipm-->>eim: Message
+        eim->>epm: Send
+        epm->>pmm: Send
+        pmm->>sam: Importer
+    else 1
+        sam->>ipm: GET /in/messages/peek
+        ipm-->>sam: MessageMetaData
+        sam->>ipm: GET /in/messages/pop
+        ipm-->>sam: Message
+    end
 </div>
 
 
