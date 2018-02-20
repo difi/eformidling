@@ -34,7 +34,6 @@ sequenceDiagram
     fs->>ip: GET /statuses/{id}
     ip-->>fs: statuses
 
-
 </div>
 
 ## Motta melding
