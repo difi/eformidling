@@ -1,7 +1,7 @@
 ---
-title: Meldinsflyt
+title: MeldinsflytX
 description: Overorndet beskrivelse av meldingsflyt
-permalink: meldingsflyt.html
+permalink: meldingsflytX.html
 layout: page
 sidebar: eformidling
 foler: NextMove
