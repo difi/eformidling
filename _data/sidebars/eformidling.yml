@@ -33,8 +33,12 @@ entries:
         url: /api.html
         output: web,pdf
 
-        title: meldingstyper
+      - title: meldingstyper
         url: /messagetypes.html
+        output: web
+
+      - title: Miljø
+        url: /environment.html
         output: web
 
   - title: NextMove
@@ -48,5 +52,9 @@ entries:
       - title: Meldingsflyt
         url: /meldingsflyt.html
         output: web
+
+      - title: Forettningsmeldingen
+        url: /forettningsmelding.html
+        output: web 
 
 
