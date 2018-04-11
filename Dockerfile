@@ -1,5 +1,5 @@
 FROM ruby:2.1
-MAINTAINER mrafayaleem@gmail.com
+LABEL maintainer="eko@difi.no" 
 
 RUN apt-get clean \
   && mv /var/lib/apt/lists /var/lib/apt/lists.broke \
