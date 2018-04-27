@@ -109,6 +109,8 @@ sequenceDiagram
     ipa-->>fs : Response
     fs ->>ipa: PutMessage
     ipa->>mf: Send
+    mf-->>ipa: 
+    ipa->>fs: PutMessage(AppReceipt[OK/ERROR])
     loop time
         ipa->>mf: GetStatus
     end
@@ -138,7 +140,7 @@ sequenceDiagram
     ip->>ip: CreateMessage
     ip->>mf: SendForsendelse    
     mf-->>ip: 
-    ip->>fs: PutMessage(AppReceipt)
+    ip->>fs: PutMessage(AppReceipt[OK/ERROR])
     loop time
         ip->>mf: RetrieveForsendelseStatus
     end
@@ -201,7 +203,8 @@ sequenceDiagram
     ip->>mf: Send
     mf->>pk:Send
     pk-->>mf: 
-    mf-->>ip: 
+    mf-->>ip:
+    ip->>fs: PutMessage(AppReceipt[OK/ERROR]) 
     loop timeunit 
         ip->>mf: GetRecieipt
         ip->>ip: UpdateReceiptsDB
@@ -308,22 +311,41 @@ sequenceDiagram
     fs->>ip: PutMessage
     ip->>ip: Enqueue
     ip-->>fs: 
-    ip-Xdb: SetReceived
+    ip-Xdb: SetCreated
     ip->>oidc: GetToken
     oidc-->>ip: Token
     ip->>sr: GetReceiver
     sr->>oidc: ValidateTolken
     oidc-->>sr: 
     sr-->>ip: Receiver
+    loop untilSendt
     ip->>ip: CreateMessage
     ip->>mf: Send    
     mf-->>ip: 
     ip-Xdb: SetSendt
+    end
+    opt DPV/DPF/DPI
+        ip->>fs:AppReceipt [OK/ERROR]
+    end
     ip->>ip: Dequeue 
-    loop time
+    loop time    
         ip->>mf: GetStatus
-        ip->>ip: UpdateReceiptsDB
-        ip-Xdb: SetDelivered
+        mf-->>ip: 
+        opt DPV/DPI/DPO
+            ip-Xdb: SetDelivered
+        end
+        opt DPF
+            ip-Xdb: SetReadyForReceiver
+        end
+        opt DPV/DPI/DPF/DPO
+            ip-Xdb: SetOpened/SetRead
+        end
+        opt DPI
+            ip-Xdb: SetReadyForPrint
+            ip-Xdb: SetNotificationFailed
+            ip-Xdb: SetMesssageReturned
+            ip-Xdb: SetFailed
+        end
     end
 </div>
 
