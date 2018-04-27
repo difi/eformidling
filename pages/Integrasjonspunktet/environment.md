@@ -24,9 +24,7 @@ graph LR
         OIDC[<b>OIDC</b><br>oidc.difi.no]
         ELMA[<b>ELMA</b><br>test-smp.difi.no] 
         Virksert[<b>Virksert</b><br>meldingsutveksling.difi.no/virksomhetssertifikat] 
-        KRR[<b>KRR</b><br>oidc.difi.no/kontaktinfo-oauth2-server] 
-        FiksMock[<b>FIKS Adressetjeneste</b>Adressse mock]
-        BrregFacade[<b>BrregFacade</b>]
+        KRR[<b>KRR</b><br>oidc.difi.no/kontaktinfo-oauth2-server]                 
         Konfig[<b>Konfigurasjonstjeneste</b><br>]
         Log[<b>Logtjeneste</b>]
     end
@@ -54,9 +52,8 @@ graph LR
     SR---KRR
     SR---Virksert
     SR---OIDC
-    SR---BrregFacade
-    SR---FiksMock
-    BrregFacade ---Brreg[<b>Brreg</b><br>data.brreg.no]
+    SR---Brreg[<b>Brreg</b><br>data.brreg.no]
+    SR---FiksAdresse[<b>FIKS Adressetjeneste</b><br>svarut.ks.no/tjenester/forsendelseservice]
     IP -- Send melding --- Generisk 
     IP -- HentKvittering --- Generisk 
     IP -- GetTolken --- OIDC
