@@ -10,4 +10,6 @@ folder: eformidling
 
 ## Komme igang med eFormidling
 
-Under arbeide
+[Se Samarbeidsportalen for avtaler og informasjon](https://samarbeid.difi.no/felleslosninger/eformidling/ta-i-bruk-eformidling/1-forberedelser)
+
+[Teknisk dokumentasjon](https://difi.github.io/move-integrasjonspunkt/index.html)
