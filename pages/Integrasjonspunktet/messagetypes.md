@@ -203,12 +203,12 @@ sequenceDiagram
     ip->>mf: Send
     mf->>pk:Send
     pk-->>mf: 
-    mf-->>ip:
+    mf-->>ip: 
     ip->>fs: PutMessage(AppReceipt[OK/ERROR]) 
     loop timeunit 
         ip->>mf: GetRecieipt
         ip->>ip: UpdateReceiptsDB
-    end 
+    end
 </div>
 
 ## eInnsynsmeldinger

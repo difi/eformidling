@@ -1,6 +1,6 @@
 ---
-title: Meldinsflyt
-description: Overorndet beskrivelse av meldingsflyt
+title: Meldingsflyt
+description: Overordnet beskrivelse av meldingsflyt
 permalink: meldingsflyt.html
 layout: page
 sidebar: eformidling
@@ -23,8 +23,10 @@ sequenceDiagram
     sr-->>ip: capabilities
     ip-->>fs: capabilities
     fs->>fs: select capability
-    fs->>ip: POST /out/messages
-    ip-->>fs: conversationId
+    loop
+        fs->>ip: POST /out/messages
+        ip-->>fs: forettningsmelding
+    end
     fs->>ip: POST /out/messages/{conversationId}
     ip->>mf: Upload
     loop 
