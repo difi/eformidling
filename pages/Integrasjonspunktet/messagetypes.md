@@ -33,24 +33,33 @@ sequenceDiagram
     participant sam as SakArkiv mottaker
 
     saa->>ipa: GetCanReceive
+    activate ipa
     ipa->>sr: GetReceiver
-    sr-->>ipa: Receiver(DPO)
+    sr-->>ipa: Receiver(DPO)    
     ipa-->>saa:response
+    deactivate ipa    
     saa->>ipa: PutMessage
+    activate ipa
+    ipa-->>saa: 
+    deactivate ipa
     ipa->>mf: Upload
     loop time
         opt NewMessageAvailable 
             ipm->>mf: DownloadMessage
+            activate ipm
             mf-->>ipm: Message
             ipm->>sam: PutMessage
             sam->>ipm: PutMessage (AppRecipt)
             ipm-->>mf: UploadMessage
+            deactivate ipm
         end
     end
     loop timeunit
         opt NewMessageAvailable 
             ipa->>mf: DownloadMessage
+            activate ipa
             ipa->>saa: PutMessage(AppRecipt)
+            deactivate ipa
         end
     end
 </div>
