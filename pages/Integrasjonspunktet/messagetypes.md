@@ -187,7 +187,7 @@ sequenceDiagram
 ## Digital post til innbygger (DPI)
 
 DPI meldinger er meldinger sendt fra integrasjonspunktet til en privat innbyggers digitale postkasse. 
-Dette er foreløpig på pilotstatie gjennom pilot med NVE
+Dette er foreløpig på pilotstadie gjennom pilot med Forsvaret
 
 <div class="mermaid">
 sequenceDiagram
