@@ -11,11 +11,11 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
     - title: Products
-      folderitems:
-        - title: OpenID Connect
-          url: /index.html
+      folderitems:        
         - title: Integrasjonspunktet
           url: /
+        - title: OpenID Connect
+          external_url: https://difi.github.io/idporten-oidc-dokumentasjon/
 #        - title: Jekyll Documentation Theme
 #          url: /mydoc_introduction.html
 #        - title: Product 1
