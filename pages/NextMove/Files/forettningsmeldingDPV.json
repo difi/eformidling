@@ -1,0 +1,31 @@
+{
+    "nonSensitiveTitle": "",
+    "securityLevel": "3",
+    "language": "NO",
+    "mandetoryNotefication": "false",
+    "notefication":{
+    "email": {
+        "text": "Varseltekst"
+    },
+    "sms": {
+        "text": "Varseltekst"
+    }
+    },
+    "serviceCode": "4255",
+    "serviceEditionCode": "10",
+    "messageTitle": "",
+    "messageSumary": "",
+    "messageBody": "",
+    "visibleDateTime": "",
+    "allowSystemDeleteDateTime": "",
+    "allowForwarding": "false",
+    "notefications": {
+        "noteficationType": "OFFENTLIG_ETAT"
+    },
+       "files" : [{
+        "hoveddokument": "true",
+        "mimetype":"",
+        "filnavn":"",
+        "tittel":""
+    }]
+}
