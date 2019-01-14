@@ -14,7 +14,7 @@ topnav_dropdowns:
       folderitems:        
         - title: Integrasjonspunktet
           url: /
-        - title: OpenID Connect
+        - title: OpenID Connect i ID-porten
           external_url: https://difi.github.io/idporten-oidc-dokumentasjon/
 #        - title: Jekyll Documentation Theme
 #          url: /mydoc_introduction.html
