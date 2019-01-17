@@ -40,9 +40,6 @@ VirkCert
 BCP
 : Business Certificat Provider - VirkCert 2.0
 
-MXA
-: [Message Ecxchage AltInn][MxaLink] - Løsning fra Patentstyret og Norges vassdrags- og energidirektorat (NVE) for kommunikasjon med AltInn. Mer informasjon [her][MxaInternlink]
-
 BestEdu
 : Tjeneste for meldingsformidling mellom offentlig virksomheter. Mer informasjon [her][BestEduInternlink]
 
