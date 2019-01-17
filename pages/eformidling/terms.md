@@ -71,11 +71,8 @@ PKI
 Virksomhetssrtifikat
 
 
-
-[MxaLink]: https://sourceforge.net/projects/mxa/
 [SbdLink]: http://www.gs1.org/ecom/standards/guidelines#s2
 [Gs1Link]: http://www.gs1.org/
 [AsicLink]: http://www.etsi.org/deliver/etsi_ts/102900_102999/102918/01.03.01_60/ts_102918v010301p.pdf
-[MxaInternlink]: api.html 
 [BestEduInternlink]: api.html
 [NextMoveInternlink] api.html
