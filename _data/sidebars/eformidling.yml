@@ -33,7 +33,6 @@ entries:
       - title: Laste ned integrasjonspunktet
         url: /download_ip.html
         output: web, pdf
-        type: homepage
 
       - title: Forutsetninger for installasjon
         url: /forutsetninger.html
