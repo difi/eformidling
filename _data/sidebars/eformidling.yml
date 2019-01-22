@@ -30,7 +30,7 @@ entries:
     output: web, pdf
     folderitems:
 
-      - title: Laste ned integrasjonspunktet
+      - title: Last ned integrasjonspunktet
         url: /download_ip.html
         output: web, pdf
 
