@@ -58,6 +58,32 @@ entries:
       - title: Oppgradere til ny versjon
         url: /ip_upgrade.html
         output: web, pdf
+        
+         
+   - title: Selvhjelp og nyttig informasjon
+     output: web, pdf
+     folderitems:
+
+      - title: Nyttig informasjon
+        url: /selfhelp.html
+        output: web, pdf
+
+      - title: Typiske feil
+        url: /selfhelp_typical_errors.html
+        output: web, pdf
+
+      - title: Trafikkflyt, kvitteringer og status
+        url: /selfhelp_traffic_flow.html
+        output: web, pdf
+        
+      - title: Endringslogg
+        url: /releasenotes.html
+        output: web, pdf
+      
+      - title: Support
+        url: /veiledning_sakark.html
+        output: web, pdf
+                 
 
   - title: Integrasjonspunktet - finn nytt namn
     output: web, pdf
