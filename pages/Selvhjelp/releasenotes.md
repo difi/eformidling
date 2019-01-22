@@ -1,9 +1,9 @@
 ---
 title: Endringslogg integrasjonspunktet
 description: Endringslogg for integrasjonspunktet
-sidebar: veiledning_sidebar
+sidebar: eformidling
 permalink: releasenotes.html
-folder: veiledning
+folder: Selvhjelp
 ---
 
 <!--
