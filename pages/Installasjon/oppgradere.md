@@ -2,9 +2,9 @@
 title: Oppgradere integrasjonspunktet til ny versjon
 description: Hvordan man oppgraderer integrasjonspunktet til ny versjon.
 summary: "Hvordan man oppgraderer integrasjonspunktet til ny versjon."
-sidebar: veiledning_sidebar
+sidebar: eformidling
 permalink: ip_upgrade.html
-folder: veiledning
+folder: Installasjon
 ---
 
 ## Oppgradere til ny versjon 
@@ -18,7 +18,7 @@ For å oppgradere til ny versjon må den siste versjonen av integrasjonspunkt[ve
 ### Alt 1: Reinstallere en integrasjonspunkt tjeneste
 Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg den i integrasjonspunkt-mappen. Om du har integrasjonspunkt installert som en tjeneste så må du endre versjonsnummer i integrasjonspunkt-service.xml-filen og dermed reinstallere tjenesten.
 
-I integrasjonspunkt-service.xml-filen er det denne linjen som må oppdateres med korrekt(nytt) versjonsnummer: ```<argument>integrasjonspunkt-1.7.92.jar</argument>```.
+I integrasjonspunkt-service.xml-filen er det denne linjen som må oppdateres med korrekt(nytt) versjonsnummer: ```<argument>integrasjonspunkt-1.7.93.jar</argument>```.
 
 Når du gjør endringer i versjon / ip-service.xml fil så må du reinstallere tjenesten. Det gjør du ved å åpne kommandovindu som administrator og navigere til integrasjonspunktmappa. Kjør så følgende kommandoer.
 
