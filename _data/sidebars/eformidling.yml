@@ -4,38 +4,38 @@ entries:
   version:
   folders:
 
-   - title: Installasjon av integrasjonspunktet
-     output: web, pdf
-     folderitems:
+  - title: Installasjon av integrasjonspunktet
+    output: web, pdf
+    folderitems:
 
-       - title: Komme igang
-         url: /index.html
-         output: web, pdf
-         type: homepage
+      - title: Komme igang
+        url: /index.html
+        output: web, pdf
+        type: homepage
 
-       - title: Forutsetninger for installasjon
-         url: /forutsetninger.html
-         output: web, pdf
+      - title: Forutsetninger for installasjon
+        url: /forutsetninger.html
+        output: web, pdf
     
-       - title: Virksomhetssertifikat
-         url: /virksomhetssertifikat.html
-         output: web, pdf
+      - title: Virksomhetssertifikat
+        url: /virksomhetssertifikat.html
+        output: web, pdf
       
-       - title: Konfigurasjon av properties
-         url: /properties_config.html
-         output: web, pdf
+      - title: Konfigurasjon av properties
+        url: /properties_config.html
+        output: web, pdf
 
-       - title: Oppstart av integrasjonspunktet
-         url: /ip_run.html
-         output: web, pdf
+      - title: Oppstart av integrasjonspunktet
+        url: /ip_run.html
+        output: web, pdf
 
-       - title: Opprette brukere i eFormidling
-         url: /create_users.html
-         output: web, pdf
+      - title: Opprette brukere i eFormidling
+        url: /create_users.html
+        output: web, pdf
          
-       - title: Oppgradere til ny versjon
-         url: /ip_upgrade.html
-         output: web, pdf
+      - title: Oppgradere til ny versjon
+        url: /ip_upgrade.html
+        output: web, pdf
 
   - title: Bakgrunn
     output: web, pdf
