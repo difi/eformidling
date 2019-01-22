@@ -80,7 +80,7 @@ entries:
        url: /releasenotes.html
        output: web, pdf
       
-     - title: Support
+     - title: Sak-arkiv
        url: /veiledning_sakark.html
        output: web, pdf
                  
