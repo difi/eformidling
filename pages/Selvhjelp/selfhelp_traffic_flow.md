@@ -157,7 +157,7 @@ DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.
 
 ### eInnsyn (DPE)
 
-![](https://github.com/difi/eformidling/blob/gh-pages/resources/flyt_dpe.jpg?raw=true)
+![](https://github.com/difi/eformidling/blob/gh-pages/resources/flyt_dpe.png?raw=true)
 
 1. Arkivar henter trigger eksport av oep saker
 2. Laster opp oep fil til filområde arkivar og eInnsynsklient har tilgang til
