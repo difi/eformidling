@@ -3,8 +3,8 @@ title: Typiske feil og hvordan løse de
 description: Selvhjelp og nyttig informasjon som øking av loggnivå, loggrullering, trafikkflyt mm. 
 summary: "Typiske feil ved konfigurasjon av integrasjonspunktet og spesielt eFormidling"
 permalink: selfhelp_typical_errors.html
-sidebar: veiledning_sidebar
-folder: veiledning
+sidebar: eformidling
+folder: Selvhjelp
 ---
 
 Mykje kan gå feil når ein setter opp integrasjonspunktet. Under har vi forsøkt å liste opp vanlege feil og korleis du kan unngå eller løyse desse sjølv.
