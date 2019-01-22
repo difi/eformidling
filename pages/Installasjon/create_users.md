@@ -29,14 +29,15 @@ Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID),
 > Id'en du får er brukernavnet som skal inn i integrasjonspunkt-local.properties. Passordet du velger skal også inn i denne filen. Dette gjelder DPO. 
 
 **Registrere datasystem:**
-![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
+![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrer.PNG)
 
 ___
 
 **Datasystem registrert:**
 
+![](https://github.com/difi/eformidling/blob/gh-pages/resources/altinnDatasystemRegistrer.PNG?raw=true)
 
-![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
+![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrert.PNG)
 
 ___
 
