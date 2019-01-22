@@ -108,7 +108,6 @@ user: %servernavn%\integrasjonspunkt
         * "disk:\mappenavn» til integrasjonspunktet"
 
 
-![Taskscheduler](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/taskscheduler.PNG)
 ![Taskscheduler](https://github.com/difi/eformidling/blob/gh-pages/resources/taskscheduler.PNG?raw=true)
 
 
