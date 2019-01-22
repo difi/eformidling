@@ -53,8 +53,8 @@ entries:
         url: /meldingsflyt.html
         output: web
 
-      - title: Forettningsmeldingen
-        url: /forettningsmelding.html
+      - title: Forretningsmeldingen
+        url: /forretningsmelding.html
         output: web 
 
 
