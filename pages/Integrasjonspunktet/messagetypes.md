@@ -9,18 +9,18 @@ folder: integrasjonspunktet
 ---
 
 I flytene nedenfor er det for tydeliggjøre de sentrale kompoentene i flyten fjernet autentisering/autorisering mot SR samt oppdatering av statusdatabasen.  
-I flytene under vises også flytene synkront, og ikke asynkront med kø som er defauten i integrasjonspunktet. Dette også for å fokusere på det sentrale i flyten.
+I flytene under vises også flytene synkront, og ikke asynkront med kø som er standard i integrasjonspunktet. Dette også for å fokusere på det sentrale i flyten.
 En generell flyt der asynkronitet, autentisering/autorisering og statusdatabase er inkludert kan sees i bunn av denne siden
 
-Oppslaget for adrressering er også generalisert ved komponenten ServiceRegistry (SR). I virkligheten er skjer det i bakant av denne oppslag i en rekke register for å avgjøre hvordan meldingen skal routes. For nærmere beskrivelse se [ServiceRegistry](). 
+Oppslaget for adressering er også generalisert ved komponenten ServiceRegistry (SR). I virkligheten er skjer det i bakant av denne oppslag i en rekke register for å avgjøre hvordan meldingen skal routes. For nærmere beskrivelse se [ServiceRegistry](). 
 
 
 
 ## Digital post offentlige virksomheter (DPO)
 
 DPO meldinger er meldinger der både avsender og mottaker har integrasjonspunkt.
-Sak-/Arkivsystemet starter prosessen med å sjekke om mottaker kan motta melding med tjenesten GetCanReceive. Integrasjonspunktet returnerer true dersom den SR returnerer DPO egenskapen. Sak-/Arkivsystemet vil deretter kalle tjenesten PutMessage med meldingen som ønskes sendt. Den mottatte meldingen valideres og pakkes i en ASiC kontainer, som krypteres og legges til SBD meldingen. SBDH fylles ut med adresseringsinformasjon, og hele meldingen signeres. Meldingen lastes deretter opp på AltInns formidlingstjeneste.
-Mottakende integrasjonspunkt puller sin "meldingsboks" på AltInns formidlingstjeneste. Dersom den finner ny melding lastes denne ned, pakkes ut, signaturer valideres og payload dekrypteres. Deretter hentes BestEdu meldingen ut fra ASiC kontaineres. Mottagers integrasjonspunkt kaller mottakers Sak-/Arkivsystems PutMessage med BestEdu medlingen. Mottakers Sak-/Arkivsystem sender en AppReceipt ved hjelp av ny PutMessage som kvittering på mottak av meldingen. Denne formidles tilbake til avsender som andre meldinger mellom integrasjonspunktet.
+Sak-/Arkivsystemet starter prosessen med å sjekke om mottaker kan motta melding med tjenesten GetCanReceive. Integrasjonspunktet returnerer true dersom den SR returnerer DPO egenskapen. Sak-/Arkivsystemet vil deretter kalle tjenesten PutMessage med meldingen som ønskes sendt. Den mottatte meldingen valideres og pakkes i en ASiC konteiner, som krypteres og legges til SBD meldingen. SBDH fylles ut med adresseringsinformasjon, og hele meldingen signeres. Meldingen lastes deretter opp på AltInns formidlingstjeneste.
+Mottakende integrasjonspunkt puller sin "meldingsboks" på AltInns formidlingstjeneste. Dersom den finner ny melding lastes denne ned, pakkes ut, signaturer valideres og payload dekrypteres. Deretter hentes BestEdu meldingen ut fra ASiC kontaineres. Mottakers integrasjonspunkt kaller mottakers Sak-/Arkivsystems PutMessage med BestEdu medlingen. Mottakers Sak-/Arkivsystem sender en AppReceipt ved hjelp av ny PutMessage som kvittering på mottak av meldingen. Denne formidles tilbake til avsender som andre meldinger mellom integrasjonspunktet.
 
 
 <div class="mermaid">
@@ -66,9 +66,9 @@ sequenceDiagram
 
 ## DPO med MSH
 
-Dersom man tar ibruk integrasjonspunktet og allerede har MSH med mottakere en kommuneiserer med over BestEdu i dag, vil integrasjonspunktet virke som en proxy mot eksisterende MSH.
-SR vil da returnere egenskapen DPV. Det gjøres da et ektra GetCanReceive mot msh, med påfølgende PutMessage dersom denne returnerer true. Mottakers Sak-/Arkivsystem svarer med AppReceipt over MSH infratstruktur, som tidligere.
-Dette gjør at man kan fortsette å sende til mottakere man har sendt meldinger med på MSH infrastruktur. Samtidig vil man etterhvert som disse tar ibruk integrasjonspunktet sømmløst begynne å sende meldinger til de på infrastrukturen beskrevet over. For beskrivelse av oppsett for dette se installsjonsveiledningen
+Dersom man tar i bruk integrasjonspunktet og allerede har MSH med mottakere en kommuniserer med over BestEdu i dag, vil integrasjonspunktet virke som en proxy mot eksisterende MSH.
+SR vil da returnere egenskapen DPV. Det gjøres da et ektra GetCanReceive mot MSH, med påfølgende PutMessage dersom denne returnerer true. Mottakers Sak-/Arkivsystem svarer med AppReceipt over MSH infratstruktur, som tidligere.
+Dette gjør at man kan fortsette å sende til mottakere man har sendt meldinger med på MSH infrastruktur. Samtidig vil man etterhvert som disse tar i bruk integrasjonspunktet sømløst begynne å sende meldinger til de på infrastrukturen beskrevet over. For beskrivelse av oppsett for dette se installasjonsveiledningen
 
 
 <div class="mermaid">
@@ -102,7 +102,7 @@ sequenceDiagram
 
 ## Digital post private virksomheter (DPV)
 
-DPV meldinger er meldinger sendt fra integrasjonspunktet til en virksomhets meldingsboks hos AltInn. Flyten initieres som ved DPO melding, men SR svarer med DPV egenskap. Meldingen mappes til en DPV melding og lastes opp til mottakes meldingsboks ved hjelp av AltInns webservice for dette. 
+DPV meldinger er meldinger sendt fra integrasjonspunktet til en virksomhets meldingsboks hos AltInn. Flyten initieres som ved DPO melding, men SR svarer med DPV egenskap. Meldingen mappes til en DPV melding og lastes opp til mottakes meldingsboks ved hjelp av Altinns webservice for dette. 
 Etter meldingen er levert sjekkes status på meldingen med en bachjobb. 
 
 <div class="mermaid">
@@ -187,7 +187,7 @@ sequenceDiagram
 ## Digital post til innbygger (DPI)
 
 DPI meldinger er meldinger sendt fra integrasjonspunktet til en privat innbyggers digitale postkasse. 
-Dette er foreløpig på pilotstadie gjennom pilot med Forsvaret
+
 
 <div class="mermaid">
 sequenceDiagram
