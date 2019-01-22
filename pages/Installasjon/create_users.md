@@ -4,7 +4,7 @@ description: Informasjon om hvordan man oppretter brukere for DPF, DPO og DPV
 summary: "Informasjon om hvordan man oppretter brukere for DPF, DPO og DPV"
 permalink: create_users.html
 sidebar: eformidling
-folder: veiledning
+folder: Installasjon
 ---
 
 ## Det finnes forskjellige brukere
