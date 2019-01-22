@@ -13,7 +13,7 @@ folder: eformidling
 Integrasjonpunktet støtter meldingsformidling via 3 apier; BestEdu, MXA og NextMove
 
 ## BestEdu
-BEST/EDU er en ....Gjennom å reimplementere tjenestegrensesnittet til BEST/EDU i integrasjonspunktet kan man utnytte det eksisterende ekspedering- og importgrensensesnittet som er en del av BEST/EDU løsningen. 
+BEST/EDU er et SOAP basert grensesnitt. Gjennom å reimplementere tjenestegrensesnittet til BEST/EDU i integrasjonspunktet kan man utnytte det eksisterende ekspedering- og importgrensensesnittet som er en del av BEST/EDU løsningen. 
 Virksomheter som bruker denne løsningen kan enkelt peke saks-/arkivsystemet til å ekspedere mot integrasjonspunktet i stenden for MSH (VismaLink/DIPS communicator). På denne måten vil en raskt kunne komme igang med meldingsuveksling mot andre offnetlige virksomheter, private virksomehter og virksomheter på FIKS plattformen. Virksomheter en allerede utveksler meldinger med over MSH, vil fremdeles få disse da integrasjonspuntket vil sende disse videre til lokal MSH intill mottaker er klar til å motta med integrasjonspunkt.
 
 
@@ -22,4 +22,4 @@ Patentstyret og Norges vassdrags- og energidirektorat (NVE) har utviklet en selv
 Difi har i en pilot med NVE reimplementert apiet til MXA i integrasjonspunktet. Dette gjør at NVE kan bruke ekspederingsfunksjonaliteten knyttet til MXA til å sende meldinger med integrasjonspunktet
 
 ## NextMove
-NextMove er neste generasjons grensesnitt mot integrasjonspunktet. Mer informasjon om grensesnittet og meldingsstandard finne [her]: 
+NextMove er neste generasjons grensesnitt mot integrasjonspunktet. Mer informasjon om grensesnittet og meldingsstandard finne [her](https://difi.github.io/eformidling/meldingsflyt.html) 
