@@ -2,10 +2,10 @@
 title: Virksomhetssertifikat
 description: Virksomhetssertifikat
 summary: "Håndtering av virksomhetssertifikatet"
-sidebar: veiledning_sidebar
+sidebar: eformidling
 permalink: virksomhetssertifikat.html
 
-folder: veiledning
+folder: Installasjon
 ---
 
 ### Om virksomhetssertifikat
