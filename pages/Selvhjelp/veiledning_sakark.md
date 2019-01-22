@@ -3,9 +3,9 @@ title: Tjenester
 keywords: tjenester, dpo, dpi, dpv, dpf, dpe
 tags: [dpo, dpv, dpi, dpe, dpf, dpi]
 summary: "Oversikt over forkjellige tjenester du kan nå med integrasjonspunket"
-sidebar: veiledning_sidebar
+sidebar: eformidling
 permalink: veiledning_sakark.html
-folder: veiledning
+folder: Selvhjelp
 ---
 
 Denne siden vil inneholde informasjon om konfigurasjon som må gjøres i det enkelte sakarkiv system
