@@ -109,6 +109,7 @@ user: %servernavn%\integrasjonspunkt
 
 
 ![Taskscheduler](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/taskscheduler.PNG)
+![Taskscheduler](https://github.com/difi/eformidling/blob/gh-pages/resources/taskscheduler.PNG?raw=true)
 
 
 Merk: om du skal starte integrasjonspunktet i staging-miljø må du bruke følgende argument i stedet: ```-jar -Dspring.profiles.active=staging integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false```
