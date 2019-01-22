@@ -39,7 +39,6 @@ folder: eformidling
 | ASiC | [Associated Signature Container][AsicLink] - Pakkeformat som er designet for å ivareta integritet til innholdet over lang tid |
 | OIDC | OpenId Connect. Mer informasjon [her][OidcLink]
 | PKI | Public key infrastructure - Rammeverk for utstedelse, administrasjon og bruk av digitale sertifikater over datanettverk |
-| Virksomhetssertifikat | SSL sertifikat utstedt til virksomhet | 
 
 ---
 
