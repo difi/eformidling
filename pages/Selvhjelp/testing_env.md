@@ -3,15 +3,15 @@ title: Testmiljø eFormidling
 description: Her finner du informasjon om bruk av testmiljø i eFormidling
 summary: "Bruk av testmiljø i eFormidling"
 permalink: testing_env.html
-sidebar: veiledning_sidebar
-folder: veiledning
+sidebar: eformidling
+folder: Selvhjelp
 ---
 
 For å få tilgang til testmiljø må bestilling skje på samme måte som en ellers, ved å kontakte  <a href="mailto:idporten@difi.no">idporten@difi.no</a> og informere om at det gjelder testmiljø. 
 
 I testmiljø må det brukes test virksomhetssertifikat og mottaker må enten være en test virksomhet eller annen virksomhet som også er aktiv i testmiljøet. 
 
-Informasjon om oppstart av integrasjonspunktet mot testmiljøet finner du her [https://difi.github.io/move-integrasjonspunkt/ip_run.html](https://difi.github.io/move-integrasjonspunkt/ip_run.html)
+Informasjon om oppstart av integrasjonspunktet mot testmiljøet finner du her [https://difi.github.io/eformidling/ip_run.html](https://difi.github.io/eformidling/ip_run.html)
 
 ### Digital post til virksomheter(DPV)
 
