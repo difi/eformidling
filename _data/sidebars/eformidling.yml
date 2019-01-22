@@ -4,6 +4,28 @@ entries:
   version:
   folders:
 
+
+  - title: Bakgrunn
+    output: web, pdf
+    folderitems:
+
+      - title: Introduksjon
+        url: /index.html
+        output: web,pdf
+
+      - title: Hvordan komme igang?
+        url: /get_started.html
+        output: web,pdf
+
+      - title: Arkitektur
+        url: /architecture.html
+        output: web,pdf
+
+      - title: Begreper
+        url: /terms.html
+        output: web,pdf
+
+
   - title: Installasjon av integrasjonspunktet
     output: web, pdf
     folderitems:
@@ -37,27 +59,7 @@ entries:
         url: /ip_upgrade.html
         output: web, pdf
 
-  - title: Bakgrunn
-    output: web, pdf
-    folderitems:
-
-      - title: Introduksjon
-        url: /index.html
-        output: web,pdf
-
-      - title: Hvordan komme igang?
-        url: /get_started.html
-        output: web,pdf
-
-      - title: Arkitektur
-        url: /architecture.html
-        output: web,pdf
-
-      - title: Begreper
-        url: /terms.html
-        output: web,pdf
-
-  - title: Integrasjonspunktet
+  - title: Integrasjonspunktet - finn nytt namn
     output: web, pdf
     folderitems: 
 
@@ -65,7 +67,7 @@ entries:
         url: /api.html
         output: web,pdf
 
-      - title: meldingstyper
+      - title: Meldingstyper
         url: /messagetypes.html
         output: web
 
