@@ -2,7 +2,7 @@
 title: Kjøre integrasjonspunktet
 description: Hvordan man kjører integrasjonspunktet.
 summary: "Hvordan man kjører integrasjonspunktet."
-sidebar: veiledning_sidebar
+sidebar: eformidling
 permalink: ip_run.html
 folder: veiledning
 ---
@@ -32,7 +32,7 @@ I denne config-fila er det lagt inn automatisk loggrotering ved 10MB størrelse 
 Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\integrasjonspunkt\integrasjonspunkt-logs``` og filen integrasjonspunkt-service.out. Innholdet i denne er veldig likt innholdet i application.log filen.
 
 ### Kjøre med lavest mulige rettigheter
-Vi anbefaler å kjøre integrasjonspunktet med en minste rettighetsbruker. For å endre hvilken bruker som kjører tjenesten ved å høyreklikke på den, velge "properties" og så velge "logg på" fanen. [Hvordan opprette en minste rettighetsbruker.](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter)
+Vi anbefaler å kjøre integrasjonspunktet med en minste rettighetsbruker. For å endre hvilken bruker som kjører tjenesten ved å høyreklikke på den, velge "properties" og så velge "logg på" fanen. [Hvordan opprette en minste rettighetsbruker.](http://difi.github.io/eformidling/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter)
 
 ### Reinstallasjon av tjenesten
 
@@ -49,7 +49,7 @@ Da er tjenesten reinstallert og restartet.
 
 ## Alt 2: Kjøre Integrasjonspunktet fra kommandovindu
 
-Integrasjonspunktet startes fra kommandolinjen med følgende kommandoer for henholdsvis test og produksjon. For å starte integrasjonspunktet kreves visse minimum brukerrettigheter, [les mer om dette her](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter). Eller så kan en eventuelt starte kommandovinduet som administrator og dermed også ha rettigheter til å starte det.
+Integrasjonspunktet startes fra kommandolinjen med følgende kommandoer for henholdsvis test og produksjon. For å starte integrasjonspunktet kreves visse minimum brukerrettigheter, [les mer om dette her](http://difi.github.io/eformidling/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter). Eller så kan en eventuelt starte kommandovinduet som administrator og dermed også ha rettigheter til å starte det.
 
 ### TEST
 ```powershell
@@ -108,7 +108,7 @@ user: %servernavn%\integrasjonspunkt
         * "disk:\mappenavn» til integrasjonspunktet"
 
 
-![Taskscheduler](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/taskscheduler.PNG)
+![Taskscheduler](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/taskscheduler.PNG)
 
 
 Merk: om du skal starte integrasjonspunktet i staging-miljø må du bruke følgende argument i stedet: ```-jar -Dspring.profiles.active=staging integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false```
