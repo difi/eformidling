@@ -30,8 +30,8 @@ entries:
     output: web, pdf
     folderitems:
 
-      - title: Komme igang
-        url: /get_started.html
+      - title: Laste ned integrasjonspunktet
+        url: /download_ip.html
         output: web, pdf
         type: homepage
 
