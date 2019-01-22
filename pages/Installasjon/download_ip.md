@@ -1,10 +1,10 @@
 ---
 title: Installasjonsveiledning for integrasjonpunktet
 description: Hvordan komme i gang med integrasjonspunktet
-summary: "Hvordan man oppgraderer integrasjonspunktet til ny versjon.
-sidebar: eformidling
-permalink: download_ip.html
+summary: "Hvordan man oppgraderer integrasjonspunktet til ny versjon."
 
+permalink: download_ip.html
+sidebar: eformidling
 folder: Installasjon
 ---
 
