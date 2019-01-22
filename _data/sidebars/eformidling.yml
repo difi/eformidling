@@ -31,7 +31,7 @@ entries:
     folderitems:
 
       - title: Komme igang
-        url: /index.html
+        url: /get_started.html
         output: web, pdf
         type: homepage
 
