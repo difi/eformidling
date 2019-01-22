@@ -3,7 +3,7 @@ title: Opprette brukere til eFormidling
 description: Informasjon om hvordan man oppretter brukere for DPF, DPO og DPV
 summary: "Informasjon om hvordan man oppretter brukere for DPF, DPO og DPV"
 permalink: create_users.html
-sidebar: veiledning_sidebar
+sidebar: eformidling
 folder: veiledning
 ---
 
@@ -29,14 +29,14 @@ Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID),
 > Id'en du får er brukernavnet som skal inn i integrasjonspunkt-local.properties. Passordet du velger skal også inn i denne filen. Dette gjelder DPO. 
 
 **Registrere datasystem:**
-![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
+![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
 ___
 
 **Datasystem registrert:**
 
 
-![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
+![](https://raw.githubusercontent.com/difi/eformidling/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
 
 ___
 
@@ -56,7 +56,7 @@ Forvaltningsgrensesnittet som administrator får tilgang til (informeres om av K
 
 KS vil sende påloggingsadresse til administrator etter at virksomheten er opprettet som bruker. Etter pålogging har administrator forskjellige valg: 
  
-![bilde1](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/01_FIKS.png?raw=true)
+![bilde1](https://github.com/difi/eformidling/blob/gh-pages/resources/01_FIKS.png?raw=true)
  
 > Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. Det gjelder tilsvarende for din virksomhet – bare med deres eget navn og organisasjonsnummer. Det er bare opplysninger som nevnes heretter må utfylles i konfigureringen. 
 
@@ -66,13 +66,13 @@ KS vil sende påloggingsadresse til administrator etter at virksomheten er oppre
 
 **Klikk på «overordnet organisasjon» og legg inn fakturaopplysninger:**
 
-![bilde2](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/02_FIKS.png?raw=true)
+![bilde2](https://github.com/difi/eformidling/blob/gh-pages/resources/02_FIKS.png?raw=true)
  
 **Klikk så på «underordnet» organisasjonsnivå**
 
 Menypunktene du ser markert med grønn hake skal du klikke deg gjennom og fylle ut. I dette tilfellet er brukernamnet for svarut brukeren vist venstre side av skjermbildet, altså "fm_nordland". Feks: ```difi.move.fiks.ut.username=fm_nordland```.
  
-![bilde3](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/03_FIKS.png?raw=true) 
+![bilde3](https://github.com/difi/eformidling/blob/gh-pages/resources/03_FIKS.png?raw=true) 
  
 
 ### ReturAdresse/forside
@@ -81,22 +81,22 @@ Menypunktene du ser markert med grønn hake skal du klikke deg gjennom og fylle 
 ### Altinn
 **Velg «ingen varsling»** 
  
-![bilde4](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/04_FIKS.png?raw=true)
+![bilde4](https://github.com/difi/eformidling/blob/gh-pages/resources/04_FIKS.png?raw=true)
 
 ### Print
 **Velg «manuell print»** 
 
-![bilde5](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/05_FIKS.png?raw=true)
+![bilde5](https://github.com/difi/eformidling/blob/gh-pages/resources/05_FIKS.png?raw=true)
 
 ### Servicepassord
 **Dette er passord nr. 1 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**
  
-![bilde6](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/06_FIKS.png?raw=true) 
+![bilde6](https://github.com/difi/eformidling/blob/gh-pages/resources/06_FIKS.png?raw=true) 
 
 ### Tilganger
 **Her kan administrator legge til flere brukere som skal ha administratorrettigheter i SvarUt-forvaltning. Sett i så fall hake i alle tilganger.** 
 
-![bilde7](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/07_FIKS.png?raw=true)
+![bilde7](https://github.com/difi/eformidling/blob/gh-pages/resources/07_FIKS.png?raw=true)
  
 Dere ser bort fra punktene SDP, Edialog og Admin. 
 
@@ -107,7 +107,7 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 **Klikk på «mottakersystem» i menyen på toppen og så på organisasjonen din i menyen på venstre side** 
 
  
-![bilde8](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/08_FIKS.png?raw=true) 
+![bilde8](https://github.com/difi/eformidling/blob/gh-pages/resources/08_FIKS.png?raw=true) 
 
 ---
 
@@ -117,12 +117,12 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 #### Offentlig nøkkel / virksomhetssertifikat
 **Her må en også laste opp den offentlige-nøkkelen til et virksomhetssertifikatet, det kan godt være den samme som integrasjonspunktet bruker.**
  
-![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
+![bilde9](https://github.com/difi/eformidling/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
  
 ### Administrasjon
 **Dette feltet skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
 
-![bilde10](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/10_FIKS.png?raw=true)
+![bilde10](https://github.com/difi/eformidling/blob/gh-pages/resources/10_FIKS.png?raw=true)
   
 ### Tilganger
 **Også her kan det legges til andre brukere.**
@@ -134,7 +134,7 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 
 Man må vente med å legge inn organisasjonsnumrene til konfigurasjon av integrasjonspunktet er utført, fordi SvarUt vil prøve å sende til integrasjonen når numrene er lagt inn. De kan bare legges inn av administrator som har gyldig post/arkiv-rolle for alle organisasjonsnumrene.  
  
-![bilde11](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/11_FIKS.png?raw=true)
+![bilde11](https://github.com/difi/eformidling/blob/gh-pages/resources/11_FIKS.png?raw=true)
 
 
 ## Opprette DPV bruker
