@@ -1,7 +1,7 @@
 ---
-title: Forettningsmelding
-description: Beskrivelse av forettningsmeldinger
-permalink: forettningsmelding.html
+title: Forretningsmelding
+description: Beskrivelse av forretningsmeldinger
+permalink: forretningsmelding.html
 layout: page
 sidebar: eformidling
 foler: NextMove
