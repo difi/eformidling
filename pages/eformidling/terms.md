@@ -22,7 +22,6 @@ folder: eformidling
 | SvarInn | Benyttes for innkommende post fra FIKS |
 | Virksert | Tjeneste for distriubsjon offentlig nøkkel til virksomhetssertifikat |
 | BCP | Business Certificat Provider - Virksert 2.0 |
-| MXA | [Message Exchange Altinn][MxaLink] - Løsning fra Patentstyret og Norges vassdrags- og energidirektorat (NVE) for kommunikasjon med AltInn. Mer informasjon [her][MxaInternlink] |
 | BestEdu | Tjeneste for meldingsformidling mellom offentlig virksomheter. Mer informasjon [her][BestEduInternlink] |
 | NextMove | Neste generasjons grensesnitt for meldingsutveksling fra offentlig. Mer informasjon [her][NextMoveInternlink] |
 | SR |ServiceRegistry - Oppslagstjeneste brukt av integrasjonspunktet for adressering av meldinger |
@@ -42,11 +41,9 @@ folder: eformidling
 
 ---
 
-[MxaLink]: https://sourceforge.net/projects/mxa/
 [SbdLink]: http://www.gs1.org/ecom/standards/guidelines#s2
 [Gs1Link]: http://www.gs1.org/
 [AsicLink]: http://www.etsi.org/deliver/etsi_ts/102900_102999/102918/01.03.01_60/ts_102918v010301p.pdf
-[MxaInternlink]: api.html 
 [BestEduInternlink]: api.html
 [NextMoveInternlink]: api.html
 [OidcLink]: https://difi.github.io/idporten-oidc-dokumentasjon/
