@@ -36,7 +36,7 @@ ___
 **Datasystem registrert:**
 
 
-![](https://github.com/difi/eformidling/blob/gh-pages/resources/altinnDatasystemRegistrert.PNG)
+![](https://github.com/difi/eformidling/blob/gh-pages/resources/altinnDatasystemRegistrert.PNG?raw=true)
 
 ___
 
