@@ -130,9 +130,9 @@ Her er må det djupare feilsøking til for å finne feilen. Kontakt Difi og oppg
 Her kan det også være fleire grunner til dette, blant annet:
 
 
-- Virksomheta har ikkje lasta opp virksomhetssertifikatet til mottakersystem i KS Svarut og dermed ikkje fullført konfigurasjonen. [Sjå veiledning](https://difi.github.io/move-integrasjonspunkt/create_users.html#konfigurering-av-svarinn-mottakersystem)
+- Virksomheta har ikkje lasta opp virksomhetssertifikatet til mottakersystem i KS Svarut og dermed ikkje fullført konfigurasjonen. [Sjå veiledning](https://difi.github.io/eformidling/create_users.html#konfigurering-av-svarinn-mottakersystem)
 - Virksomheta har ikkje registrert eget organisasjonsnummer inne på mottakersystem i KS Svarut
-- Om avsender sitt organisasjonsnumemr ikkje er med i metadata i meldinga så vil ikkje mottaker få meldinga rett til sak-arkivsystemet. Vi har ein workaround på dette som involverer å bruke eit dummy-orgnr. vha propertyen ```difi.move.fiks.inn.fallbackSenderOrgNr=``` [Les meir her](https://difi.github.io/move-integrasjonspunkt/properties_config.html#dpf)
+- Om avsender sitt organisasjonsnumemr ikkje er med i metadata i meldinga så vil ikkje mottaker få meldinga rett til sak-arkivsystemet. Vi har ein workaround på dette som involverer å bruke eit dummy-orgnr. vha propertyen ```difi.move.fiks.inn.fallbackSenderOrgNr=``` [Les meir her](https://difi.github.io/eformidling/properties_config.html#dpf)
 - SvarUt-brukere(kommuner/fylkeskommuner) med SvarUt versjon 4 eller eldre kan ikkje sende med orgnr i metadata. 
 - Ikkje alle SvarUt-brukere(kommuner/fylkeskommuner) sender med orgnr, sjølv om dei kan sende det teknisk sett. Kan være feks manglande oppsett i KS SvarUt hos avsender.
 
