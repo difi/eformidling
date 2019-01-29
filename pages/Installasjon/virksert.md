@@ -24,7 +24,7 @@ Hvordan du legger inn sertifikatet i JKS finner du nedenfor. Etter at du har lag
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](https://www.buypass.no/hjelp/virksomhetssertifikat)
 
-## Legge sertifikatet i Java Key Store (JKS)
+### Legge sertifikatet i Java Key Store (JKS)
 
 I dette kapittelet finner du informasjon om hvordan du konverterer en .p12-keystore (filformatet mottatt ved bestilling av virksomhetssertifikat) til en java key store.
 
@@ -88,7 +88,7 @@ Keytool finner du i
 
 
 
-## Laste opp public delen av virksomhetssertifikatet
+### Laste opp public delen av virksomhetssertifikatet
 
 NB! Zip sertifikatfila før du sender den.
 
