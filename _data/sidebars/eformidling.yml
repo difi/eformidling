@@ -17,10 +17,6 @@ entries:
         url: /get_started.html
         output: web,pdf
 
-      - title: Arkitektur
-        url: /architecture.html
-        output: web,pdf
-
       - title: Begreper
         url: /terms.html
         output: web,pdf
