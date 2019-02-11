@@ -4,13 +4,13 @@
       "HeaderVersion": "1.0",
       "Sender": {
         "Identifier": {
-          "Authority": "so6523-actorid-upis",
+          "Authority": "iso6523-actorid-upis",
           "ID": "9908:910077473"
         }
       },
       "Receiver": {
         "Identifier": {
-          "Authority": "so6523-actorid-upis",
+          "Authority": "iso6523-actorid-upis",
           "ID": "9908:910075918"
         }
       },
@@ -26,68 +26,12 @@
         "InstanceIdentifier": "37efbd4c-413d-4e2c-bbc5-257ef4a65a45",
         "Identifier": "urn:no:difi:meldingsutveksling:2.0",
         "CorrelationInformation": {
-          "RequestingDocumentCreationDateTime": "2003-05-02T00:31:52Z",
-          "RequestingDocumentInstanceIdentifier": "100002",
           "ExpectedResponseDateTime": "2003-05-10T00:31:52Z" 
         }         
-      },
-      {
-        "Type": "Sporingsinfo",
-        "InstanceIdentifier": "2016/12345-54",
-        "Identifier": "urn:no:difi:meldingsutveksling:2.0"          
       }
     ]},
-    "infoMessage":{
-      "nonSensitiveTitle": "",
-      "securityLevel": "3",
-      "language": "NO",
-      "mandetoryNotefication": "false",
-      "notefication":{
-        "email": {
-            "text": "Varseltekst"
-        },
-        "sms": {
-            "text": "Varseltekst"
-        }        
-    },
-    "dpiInfo" : {
-      "fysiskpostinfo" : {
-        "utskriftsfarge" : "SORT_HVIT",
-        "posttype": "B",
-        "retur":{
-            "mottaker":{
-                "navn": "Hentes fra capabilitylookup",
-                "adresselinje1": "Hentes fra capabilitylookup",
-                "adresselinje2": "Hentes fra capabilitylookup",
-                "adresselinje3": "Hentes fra capabilitylookup",
-                "postnummer": "Hentes fra capabilitylookup",
-                "poststed": "Hentes fra capabilitylookup",
-                "adresselinje4": "Hentes fra capabilitylookup",
-                "landkode": "Hentes fra capabilitylookup",
-                "land": "Hentes fra capabilitylookup"
-
-            },
-            "postHaandtering": "DIREKTE_RETUR"
-        } 
-      },
-      "digitalPostInfo" : {
-          "virkningsdato": "",
-          "virkningstidspunkt": "",
-          "aapningskvittering": "false"
-      },
-    "dpvInfo":{
-      "serviceAerea": "10",
-      "visibleDateTime": "",
-      "languageCode": "1044",
-      "allowSystemDeleteDateTime": "",
-      "allowForwarding": "false",
-      "notefications": {
-          "noteficationType": "OFFENTLIG_ETAT"
-      }  
-    } 
+    "businessmessage":{
+        "securitylevel": "3"      
     }
-      
-    },
-    "payload": "payload"
   }
 }
