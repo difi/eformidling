@@ -5,11 +5,18 @@ sidebar: eformidling
 permalink: releasenotes.html
 folder: Selvhjelp
 ---
+## Installasjonsveiledning flyttet til ny URL
+29.01.18
 
-<!--
+Installasjonsveiledningen er flyttet til et nytt repository [https://difi.github.io/eformidling](https://difi.github.io/eformidling). Det er satt opp redirect fra gamler URL'er. På den nye siden finner du enda mer teknisk informasjon om eformidling, meldingstyper, NextMove, meldingsflyt, mm.
+
 ## 1.7.94
-30.11.12
+25.01.19
 ```
+MOVE-1125 - Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
+MOVE-1246 - Endring av IP-adresser i Difis driftmiljø. Opdaterte logstash URL for staging og produksjon profilene (miljøene)
+
+Det vil si:
 - Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
 - dersom avsender ikke får leveringskvittering/kvittering som avslutter "polling" innen den tid timeout er satt (24t), får meldingen feilstatus i statusgrensesnittet. 
 ```

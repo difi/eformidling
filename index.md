@@ -19,4 +19,8 @@ Kort fortalt gjør eFormidling det mulig å kommunisere med virksomheter (etterh
 
 
 
+- Hvem validerer at meldingen er korrekt?
+- Hvordan skal denne gjøres tilgjengelig for de løsninger som skal håndtere meldingen lokalt?
+- Skal vi legge opp til en push eller pull arkitektur, eller begge deler?
+- Skal vi ha forskjellige strategier for å håndtere meldinger basert på størrelse? (strømmende vs pull baserte grensesnitt).
 

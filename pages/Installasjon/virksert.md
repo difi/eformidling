@@ -22,13 +22,13 @@ Hvordan du legger inn sertifikatet i JKS finner du nedenfor. Etter at du har lag
 > * NB6! alias = entry name. Entry name er namnet på alias(namnet på sertifikatet) i keystore explorer. Integrasjonspunkt.local.properties fila bruker alias som namn på sertifikatet
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
-Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
+Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](https://www.buypass.no/hjelp/virksomhetssertifikat)
 
-## Legge sertifikatet i Java Key Store (JKS)
+### Legge sertifikatet i Java Key Store (JKS)
 
 I dette kapittelet finner du informasjon om hvordan du konverterer en .p12-keystore (filformatet mottatt ved bestilling av virksomhetssertifikat) til en java key store.
 
-Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. Dette skal senere legges inn i integrasjonspunkt-local.properties filen som er en del av [neste steg av installasjonen.](http://difi.github.io/move-integrasjonspunkt/properties_config.html)
+Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. Dette skal senere legges inn i integrasjonspunkt-local.properties filen som er en del av [neste steg av installasjonen.](http://difi.github.io/eformidling/properties_config.html)
 
 
 **NB!** Passord på keystore og sertifikat **MÅ** være like
@@ -88,7 +88,7 @@ Keytool finner du i
 
 
 
-## Laste opp public delen av virksomhetssertifikatet
+### Laste opp public delen av virksomhetssertifikatet
 
 NB! Zip sertifikatfila før du sender den.
 
