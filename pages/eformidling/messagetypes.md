@@ -1,11 +1,11 @@
 ---
-title: Meldingstyper
-description: Oversikt over meldingstyper/mottaks plattformer supportert av integrasjonspunktet
+title: Meldingsflyt og flyt
+description: Oversikt over meldingstyper/mottaks plattformer supportert av integrasjonspunktet og hvordan meldinger formidles til disse
 summary: "Informasjon om hvordan man kommer igang med eformidling"
 permalink: messagetypes.html
 layout: page
 sidebar: eformidling
-folder: integrasjonspunktet
+folder: eformidling
 ---
 
 I flytene nedenfor er det for tydeliggjøre de sentrale kompoentene i flyten fjernet autentisering/autorisering mot SR samt oppdatering av statusdatabasen.  

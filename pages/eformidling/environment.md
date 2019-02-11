@@ -4,7 +4,7 @@ description:
 permalink: environment.html
 layout: page
 sidebar: eformidling
-foler: Integrasjonspunktet
+foler: eformidling
 ---
 
 Integrasjonspunktet kan kjøres i forskjellige profiler/modus både for Produksjon, Staging (pre-produduksjonstesting) samt utvikling. Under følger en oversikt over hvikle av de benyttede tjenestene man når i modus for produksjon og staging.

@@ -11,10 +11,12 @@ isHome: true
 
 ## Bakgrunn
 
-Dersom man ser på offentlig sektor som en stor distribuert organisasjon med varierende digital modenhet, så er meldingsorienterte asynkrone løsningsarkitekturer blitt en defacto måte å oppnå løse koblinger slik at man unngå gjensidige avhengigheter.
+eFormidling er et konsept for sikker og effektiv meldingsutveksling i offentlig sektor. eFormidling vil tilrettelegge for videre samspill på tvers av offentlig sektor.
 
-Alternative arkitekturer kan være prosessorienterte (brukerorienterte) eller funksjonsorienterte (forretningstjenester) løsningsarkitekturer. Svakeheten med disse blir fort at man får stor fokus på gjenbruk gjennom sentralisering. Utfordringen blir ofte at man innfører flaskehalser eller “single point of failure”, eller at man får overlappende/konkurrende løsninger fordi utbredelse ikke går fort nok.
+Difi har utviklet integrasjonspunktet for eFormidling, som er en løsning som bidrar til en mer sikker, samordnet og effektiv meldingsutveksling, primært i offentlig sektor. Arkitekturen som ligger til grunn i eFormidling vil gjøre det enkelt å ta i bruk CEF-eDelivery for meldingsutveksling. Løsningen er i produksjon og er allerede tatt i bruk av flere virksomheter.
 
-Ved å la hver enkel deltaker fokusere på å produsere og konsumere meldinger i en asynkron meldingsinfrastruktur så kan man snu dette til en fordel. Det er lettere å å tilby “0-alternativ” løsninger slik at alle kan ta i bruk løsningene fort, samtidig som at man gradvis kan innføre nye sentrale tjenester som virksomhetene tar i bruk etter behov.
+Kort fortalt gjør eFormidling det mulig å kommunisere med virksomheter (etterhvert også innbyggere) på en enkel og sikker måte, uten å måtte ta hensyn til om mottakeren er en privat eller offentlig virksomhet.
+
+
 
 

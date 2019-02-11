@@ -13,14 +13,18 @@ entries:
         url: /index.html
         output: web,pdf
 
+      - title: Meldingstyper og flyt
+        url: /messagetypes.html
+        output: web
+
+      - title: Miljø
+        url: /environment.html
+        output: web
+
       - title: Hvordan komme igang?
         url: /get_started.html
         output: web,pdf
-
-      - title: Arkitektur
-        url: /architecture.html
-        output: web,pdf
-
+      
       - title: Begreper
         url: /terms.html
         output: web,pdf
@@ -97,13 +101,7 @@ entries:
         url: /api.html
         output: web,pdf
 
-      - title: Meldingstyper
-        url: /messagetypes.html
-        output: web
-
-      - title: Miljø
-        url: /environment.html
-        output: web
+     
 
   - title: NextMove
     output: web
