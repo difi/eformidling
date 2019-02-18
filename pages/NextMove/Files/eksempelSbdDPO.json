@@ -31,7 +31,9 @@
       }
     ]},
     "businessmessage":{
-        "securitylevel": "3"      
+        "securitylevel": "3",
+        "senderRef": "",
+        "receiverRef": ""
     }
   }
 }
