@@ -33,7 +33,14 @@
     "businessmessage":{
         "securitylevel": "3",
         "senderRef": "",
-        "receiverRef": ""
+        "receiverRef": "",
+        "files" : [{
+            "id":"",
+            "hoveddokument":"true",
+            "mimetype":"",
+            "filnavn":"",
+            "tittel":""
+        }]
     }
   }
 }
