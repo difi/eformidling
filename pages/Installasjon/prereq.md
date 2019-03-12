@@ -62,14 +62,6 @@ En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalans
 | www.altinn.no | 89.250.123.0:443 | - | DPO |
 
 
-
-<!--<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
-<div id="demo3" class="collapse">
- {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpi.html %}
-</div>
--->
-
 ### Brannmuråpninger i produksjon
 
 <button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: Einnsyn</button>
