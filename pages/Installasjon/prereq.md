@@ -49,7 +49,6 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 
 En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
-Work in progress:
 
 |    Beskrivelse    | IPv4-adresse | IPv6-adresse | Tjeneste |
 | ------------- |:-------------:| :-----:| :------:|
