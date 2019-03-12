@@ -59,6 +59,9 @@ Work in progress:
 | Logging - TCP utgående | 	79.170.81.228:8300  | 2001:67c:2d68:d1f1::56:1 | Alle |
 | oidc-ver1.difi.no | 146.192.252.121:443		 | - | Alle |
 | oidc-ver2.difi.no | 146.192.252.121:443	 | - | Alle |
+| eInnsyn - move-dpe.servicebus.windows.net	 | 13.69.253.135:443 | - | DPE | 
+| www.altinn.no | 89.250.123.0:443 | - | DPO |
+
 
 
 
