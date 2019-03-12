@@ -52,7 +52,6 @@ En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalans
 <button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: eInnsyn</button>
 <div id="demo" class="collapse">
   {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpe.html %}
 </div>
 
 <button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: Eformidling</button>
