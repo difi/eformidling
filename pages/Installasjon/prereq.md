@@ -64,19 +64,6 @@ Work in progress:
 
 
 
-
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: eInnsyn</button>
-<div id="demo" class="collapse">
-  {% include custom/firewall_staging/staging_generell.html %} 
-</div>
-
-<button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: Eformidling</button>
-<div id="demo2" class="collapse">
- {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpo.html %}
-</div>
-
-
 <!--<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
 <div id="demo3" class="collapse">
  {% include custom/firewall_staging/staging_generell.html %} 
