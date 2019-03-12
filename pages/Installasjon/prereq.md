@@ -49,6 +49,17 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 
 En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
+Work in progress:
+
+|    Beskrivelse    | IPv4-adresse | IPv6-adresse | Tjeneste |
+| ------------- |:-------------:| :-----:| :------:|
+| beta-meldingsutveksling.difi.no lb1 | 79.170.81.231:443	 | 2001:67c:2d68:d1f1::1b:1 | - |
+| beta-meldingsutveksling.difi.no lb2 | 79.170.81.232:443	 | 2001:67c:2d68:d1f1::1b:2 | - |
+| beta-meldingsutveksling.difi.no lb3 | 79.170.81.233:443	 | 2001:67c:2d68:d1f1::1b:3 | - |
+| Logging - TCP utgående | 	79.170.81.228:8300  | 2001:67c:2d68:d1f1::56:1 | - |
+
+
+
 <button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: eInnsyn</button>
 <div id="demo" class="collapse">
   {% include custom/firewall_staging/staging_generell.html %} 
