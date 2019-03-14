@@ -64,6 +64,19 @@ En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalans
 
 ### Brannmuråpninger i produksjon
 
+|    Beskrivelse    | IPv4-adresse | IPv6-adresse | Tjeneste |
+| ------------- |:-------------:| :-----:| :------:|
+| meldingsutveksling.difi.no lb1 | 79.170.81.231:443	 | 2001:67c:2d68:d1f1::1b:1 | Alle |
+| meldingsutveksling.difi.no lb2 | 79.170.81.232:443	 | 2001:67c:2d68:d1f1::1b:2 | Alle |
+| meldingsutveksling.difi.no lb3 | 79.170.81.233:443	 | 2001:67c:2d68:d1f1::1b:3 | Alle |
+| Logging - TCP utgående | 	79.170.81.228:8400  | 2001:67c:2d68:d1f1::56:1 | Alle |
+| oidc.difi.no | 146.192.252.54:443	 | - | Alle |
+| eInnsyn - move-dpe.servicebus.windows.net	 | 13.69.253.135:443 | - | DPE | 
+| www.altinn.no | 89.250.123.0:443 | - | DPO |
+| meldingsformidler.digipost.no | 146.192.168.126:443 | -  | DPI |
+| meldingsformidler.digipost.no | 146.192.168.80:443 | -  | DPI |
+| svarut.ks.no | 193.161.171.187:443 | - | DPF |
+
 <button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: Einnsyn</button>
 <div id="demo4" class="collapse">
   {% include custom/firewall_prod/prod_generell.html %} 
