@@ -137,7 +137,7 @@ Man må vente med å legge inn organisasjonsnumrene til konfigurasjon av integra
 ![bilde11](https://github.com/difi/eformidling/blob/gh-pages/resources/11_FIKS.png?raw=true)
 
 ### Mistanke om feil passord i oppsettet
-Dette kan enkelt testes av den som mener å ha servicepassordet. Gå til https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV6. Dette er en av forsendelseservicene. Her blir du bedt om brukernavn og passord. Tast inn brukernavn og det passordet dere mener å ha fått. Dersom det resulterer i at servicen igjen ber om brukernavn og passord, er passordet galt. Dersom dere har oppgitt riktig brukernavn og passord får dere en respons som kan variere litt fra nettleser til nettleser.
+Dette kan enkelt testes av den som mener å ha servicepassordet. Gå til [KS forsendelseservice](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV6). Dette er en av forsendelseservicene. Her blir du bedt om brukernavn og passord. Tast inn brukernavn og det passordet dere mener å ha fått. Dersom det resulterer i at servicen igjen ber om brukernavn og passord, er passordet galt. Dersom dere har oppgitt riktig brukernavn og passord får dere en respons som kan variere litt fra nettleser til nettleser.
 
 
 
