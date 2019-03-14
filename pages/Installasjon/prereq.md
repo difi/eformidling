@@ -77,23 +77,6 @@ En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalans
 | meldingsformidler.digipost.no | 146.192.168.80:443 | -  | DPI |
 | svarut.ks.no | 193.161.171.187:443 | - | DPF |
 
-<button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: Einnsyn</button>
-<div id="demo4" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpe.html %}
-</div>
-
-<button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: eFormidling</button>
-<div id="demo5" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpo.html %}
-</div>
-
-<button data-toggle="collapse" data-target="#demo6">Brannmuråpninger produksjonsmiljø: DPI</button>
-<div id="demo6" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpi.html %}
-</div>
 
 ### Installere Java runtime environment (JDK)
 
