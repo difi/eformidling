@@ -1,0 +1,37 @@
+{
+    "mottaker":{
+        "person": {
+           "personidentifikator": "01013300001",
+           "postkasseadresse": "ola.nordmann#0ABC"
+        }
+    },      
+    "fysiskpostinfo" : {
+        "mottaker":{
+            "navn": "Hentes fra capabilitylookup",
+            "adresselinje1": "Hentes fra capabilitylookup",
+            "adresselinje2": "Hentes fra capabilitylookup",
+            "adresselinje3": "Hentes fra capabilitylookup",
+            "adresselinje4": "Hentes fra capabilitylookup",
+            "postnummer": "Hentes fra capabilitylookup",
+            "poststed": "Hentes fra capabilitylookup",                
+            "landkode": "Hentes fra capabilitylookup",
+            "land": "Hentes fra capabilitylookup"
+        },         
+        "utskriftsfarge" : "SORT_HVIT",
+        "posttype": "B",
+        "retur":{
+            "mottaker":{
+                "navn": "Hentes fra capabilitylookup",
+                "adresselinje1": "Hentes fra capabilitylookup",
+                "adresselinje2": "Hentes fra capabilitylookup",
+                "adresselinje3": "Hentes fra capabilitylookup",
+                "adresselinje4": "Hentes fra capabilitylookup",
+                "postnummer": "Hentes fra capabilitylookup",
+                "poststed": "Hentes fra capabilitylookup",                
+                "landkode": "Hentes fra capabilitylookup",
+                "land": "Hentes fra capabilitylookup"
+            },
+            "postHaandtering": "DIREKTE_RETUR"
+        } 
+    }  
+}

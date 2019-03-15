@@ -2,15 +2,7 @@
     "nonSensitiveTitle": "",
     "securityLevel": "3",
     "language": "NO",
-    "mandetoryNotefication": "false",
-    "notefication":{
-    "email": {
-        "text": "Varseltekst"
-    },
-    "sms": {
-        "text": "Varseltekst"
-    }
-    },
+    "mandetoryNotefication": "false",    
     "serviceCode": "4255",
     "serviceEditionCode": "10",
     "messageTitle": "",
@@ -22,10 +14,12 @@
     "notefications": {
         "noteficationType": "OFFENTLIG_ETAT"
     },
-       "files" : [{
-        "hoveddokument": "true",
-        "mimetype":"",
-        "filnavn":"",
-        "tittel":""
-    }]
+    "notefication":{
+        "email": {
+            "text": "Varseltekst"
+        },
+        "sms": {
+            "text": "Varseltekst"
+        }
+    }
 }
