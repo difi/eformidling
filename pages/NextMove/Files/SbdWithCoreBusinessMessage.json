@@ -18,7 +18,7 @@
         "Standard": "urn:no:difi:meldingsutveksling:2.0",
         "TypeVersion": "2.0",
         "InstanceIdentifier": "ff88849c-e281-4809-8555-7cd54952b916",
-        "Type": "digitaPost/noark5json", 
+        "Type": "archivemessage", 
         "CreationDateAndTime": "2016-04-11T15:29:58.753+02:00"
       },
       "BusinessScope": [{
@@ -30,7 +30,7 @@
         }         
       }
     ]},
-    "businessmessage":{
+    "archivemessage":{
         "securitylevel": "3",
         "isSensitive": "true/false",
         "senderRef": "",
