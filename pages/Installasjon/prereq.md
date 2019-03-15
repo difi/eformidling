@@ -26,66 +26,41 @@ Bekreftelse på at en bruker er autentisert sendes fra OIDC til innholdsleverand
 [For mer informasjon om Network Time Protocol.](https://no.wikipedia.org/wiki/Network_Time_Protocol)
 Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i datasenteret.
 
-## Viktig - Framtidig endring i brannmuråpninger! 
-Difi bytter ISP og det fører til nye IP-adresser. Dette medfører at integrasjonspunktene vil måtte ha brannmuråpning for utgående trafikk mot de nye IP-adressene. Endringen skjer **28.01.19**. Bruk gjerne DNS og endre allerede i dag.
-
-Gjelder både produksjon og test.
-
-
-|    Tjeneste     | Gammel IP-adresse  | Ny IPv4-adresse | Ny IPv6-adresse |
-| ------------- |:-------------:| :-----:| :------:|
-| meldingsutveksling.difi.no lb1 | 93.94.10.45:443 | 79.170.81.231:443 | 2001:67c:2d68:d1f1::1b:1 |
-| meldingsutveksling.difi.no lb2 | 93.94.10.5:443 | 79.170.81.232:443 | 2001:67c:2d68:d1f1::1b:2 | 
-| meldingsutveksling.difi.no lb3 | 93.94.10.30:443 | 79.170.81.233:443 | 2001:67c:2d68:d1f1::1b:3 | 
-| logging | 93.94.10.18:8400^ | 79.170.81.228:8400^ | 2001:67c:2d68:d1f1::56:1  | 
-
-^ 8300= test, 8400= prod via tcp. SSL 5443 prod, SSL 5343 test.
-
-En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
 ### Brannmuråpninger i testmiljø
 
 Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp noen brannmuråpninger. I akkordion lenger nede så må du åpne både generelle og spesifikke for den tjenesten du skal installere.
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: eInnsyn</button>
-<div id="demo" class="collapse">
-  {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpe.html %}
-</div>
-
-<button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: Eformidling</button>
-<div id="demo2" class="collapse">
- {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpo.html %}
-</div>
+En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
 
-<!--<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
-<div id="demo3" class="collapse">
- {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpi.html %}
-</div>
--->
+|    Beskrivelse    | IPv4-adresse | IPv6-adresse | Tjeneste |
+| ------------- |:-------------:| :-----:| :------:|
+| beta-meldingsutveksling.difi.no lb1 | 79.170.81.231:443	 | 2001:67c:2d68:d1f1::1b:1 | Alle |
+| beta-meldingsutveksling.difi.no lb2 | 79.170.81.232:443	 | 2001:67c:2d68:d1f1::1b:2 | Alle |
+| beta-meldingsutveksling.difi.no lb3 | 79.170.81.233:443	 | 2001:67c:2d68:d1f1::1b:3 | Alle |
+| Logging - TCP utgående | 	79.170.81.228:8300  | 2001:67c:2d68:d1f1::56:1 | Alle |
+| oidc-ver1.difi.no | 146.192.252.121:443		 | - | Alle |
+| oidc-ver2.difi.no | 146.192.252.121:443	 | - | Alle |
+| eInnsyn - move-dpe.servicebus.windows.net	 | 13.69.253.135:443 | - | DPE | 
+| www.altinn.no | 89.250.123.0:443 | - | DPO |
+
 
 ### Brannmuråpninger i produksjon
 
-<button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: Einnsyn</button>
-<div id="demo4" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpe.html %}
-</div>
+|    Beskrivelse    | IPv4-adresse | IPv6-adresse | Tjeneste |
+| ------------- |:-------------:| :-----:| :------:|
+| meldingsutveksling.difi.no lb1 | 79.170.81.231:443	 | 2001:67c:2d68:d1f1::1b:1 | Alle |
+| meldingsutveksling.difi.no lb2 | 79.170.81.232:443	 | 2001:67c:2d68:d1f1::1b:2 | Alle |
+| meldingsutveksling.difi.no lb3 | 79.170.81.233:443	 | 2001:67c:2d68:d1f1::1b:3 | Alle |
+| Logging - TCP utgående | 	79.170.81.228:8400  | 2001:67c:2d68:d1f1::56:1 | Alle |
+| oidc.difi.no | 146.192.252.54:443	 | - | Alle |
+| eInnsyn - move-dpe.servicebus.windows.net	 | 13.69.253.135:443 | - | DPE | 
+| www.altinn.no | 89.250.123.0:443 | - | DPO |
+| meldingsformidler.digipost.no | 146.192.168.126:443 | -  | DPI |
+| meldingsformidler.digipost.no | 146.192.168.80:443 | -  | DPI |
+| svarut.ks.no | 193.161.171.187:443 | - | DPF |
 
-<button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: eFormidling</button>
-<div id="demo5" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpo.html %}
-</div>
-
-<button data-toggle="collapse" data-target="#demo6">Brannmuråpninger produksjonsmiljø: DPI</button>
-<div id="demo6" class="collapse">
-  {% include custom/firewall_prod/prod_generell.html %} 
-  {% include custom/firewall_prod/prod_dpi.html %}
-</div>
 
 ### Installere Java runtime environment (JDK)
 
