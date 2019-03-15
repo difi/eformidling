@@ -26,22 +26,6 @@ Bekreftelse på at en bruker er autentisert sendes fra OIDC til innholdsleverand
 [For mer informasjon om Network Time Protocol.](https://no.wikipedia.org/wiki/Network_Time_Protocol)
 Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i datasenteret.
 
-## Viktig - Framtidig endring i brannmuråpninger! (Forelda info - skal fjernast) 
-Difi bytter ISP og det fører til nye IP-adresser. Dette medfører at integrasjonspunktene vil måtte ha brannmuråpning for utgående trafikk mot de nye IP-adressene. Endringen skjer **28.01.19**. Bruk gjerne DNS og endre allerede i dag.
-
-Gjelder både produksjon og test.
-
-
-|    Tjeneste     | Gammel IP-adresse  | Ny IPv4-adresse | Ny IPv6-adresse |
-| ------------- |:-------------:| :-----:| :------:|
-| meldingsutveksling.difi.no lb1 | 93.94.10.45:443 | 79.170.81.231:443 | 2001:67c:2d68:d1f1::1b:1 |
-| meldingsutveksling.difi.no lb2 | 93.94.10.5:443 | 79.170.81.232:443 | 2001:67c:2d68:d1f1::1b:2 | 
-| meldingsutveksling.difi.no lb3 | 93.94.10.30:443 | 79.170.81.233:443 | 2001:67c:2d68:d1f1::1b:3 | 
-| logging | 93.94.10.18:8400^ | 79.170.81.228:8400^ | 2001:67c:2d68:d1f1::56:1  | 
-
-^ 8300= test, 8400= prod via tcp. SSL 5443 prod, SSL 5343 test.
-
-En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
 ### Brannmuråpninger i testmiljø
 
