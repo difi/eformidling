@@ -106,16 +106,16 @@ entries:
     output: web
     folderitems:
 
-      - title: Arkivmeldingen
-        url: /arkivmeldingen.html
-        output: web
-
-      - title: Meldingsflyt
-        url: /meldingsflyt.html
-        output: web
-
-      - title: Forretningsmeldingen
-        url: /forretningsmelding.html
-        output: web 
+#      - title: Arkivmeldingen
+#        url: /arkivmeldingen.html
+#        output: web
+#
+#      - title: Meldingsflyt
+#        url: /meldingsflyt.html
+#        output: web
+#
+#      - title: Forretningsmeldingen
+#        url: /forretningsmelding.html
+#        output: web 
 
 
