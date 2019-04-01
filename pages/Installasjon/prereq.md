@@ -21,7 +21,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 + Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.
 
 ### Tidssynkronisering
-Bekreftelse på at en bruker er autentisert sendes fra OIDC til innholdsleverandør sitt integrasjonspunkt i form av en Json Web Token (JWT). En JWT inneholder tidsstempel som angir hvor lenge den er gyldig. Det er derfor viktig at alle servere som kommuniserer via integrasjonspunktet har synkroniserte klokker. OIDC bruker NTP (”network time protocol”) for synkronisering, tidskilden er GPS-basert. Det er videre viktig at alle servere i CoT er justert korrekt for tidssone og sommertid. (CET / CEST i Norge). Du kan sjekke din klokke her: https://time.is/ 
+Bekreftelse på at bruker er autentisert sendes fra OIDC til ditt integrasjonspunkt i form av en Json Web Token (JWT). En JWT inneholder tidsstempel som angir hvor lenge den er gyldig. Det er derfor viktig at alle servere som kommuniserer via integrasjonspunktet har synkroniserte klokker. OIDC bruker NTP (”network time protocol”) for synkronisering, tidskilden er GPS-basert. Det er videre viktig at alle servere i CoT er justert korrekt for tidssone og sommertid. (CET / CEST i Norge). Du kan sjekke din klokke her: https://time.is/ 
 
 [For mer informasjon om Network Time Protocol.](https://no.wikipedia.org/wiki/Network_Time_Protocol)
 Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i datasenteret.

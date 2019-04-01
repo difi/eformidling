@@ -15,7 +15,7 @@ Informasjon om oppstart av integrasjonspunktet mot testmiljøet finner du her [h
 
 ### Digital post til virksomheter(DPV)
 
-Det er opprettet test virksomheter en kan bruke som mottakere. Her vil du kunne logge inn å finne forsendelsen din. Disse virksomhetene og brukeren vil være **felles** for alle virksomheter i testmiljø. Pass på hvilken informasjon du sender i testingen.
+Det er opprettet test virksomheter en kan bruke som mottakere. Her vil du kunne logge inn å finne forsendelsen din. Disse virksomhetene og brukeren vil være **felles** for alle virksomheter i testmiljø. Pass på å ikke sende sensitiv informasjon under testingen med disse virksomhetene.
 
 Testbruker og passord til innlogging i Altinn testmiljøet fåes ved å kontakte <a href="mailto:idporten@difi.no">idporten@difi.no</a> 
 
