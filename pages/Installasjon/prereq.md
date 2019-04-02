@@ -14,7 +14,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 
 ## Dette gjør du før installasjon av Integrasjonspunktet
 
-+ Tilgjengelig minne må være minimum 1GB for eInnsyn og minimum 2GB for eFormidling. Dette sørger for at alle integrasjonspunkt kan sende og motta filstørrelser inntil 75MB. Det er viktig at alle setter minimum 2GB minne ved bruk av eFormidling.
++ Tilgjengelig minne må være minimum 1GB for eInnsyn og minimum 2GB for eFormidling. [Les mer om minne her.](https://difi.github.io/eformidling/selfhelp.html#justere-tilgjengelig-minne)
 + Nødvendige brannmuråpninger
 + Java 8 med JCE installert (JDK)
 + Virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer](http://difi.github.io/eformidling/virksomhetssertifikat.html)
