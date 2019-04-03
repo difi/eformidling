@@ -1,7 +1,6 @@
 ---
 title: Sikkerhet
 description: Sikkerhet
-summary: "Litt meta-info om disse sidene"
 permalink: security.html
 layout: page
 sidebar: eformidling
