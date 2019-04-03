@@ -5,6 +5,7 @@ permalink: message.html
 layout: page
 sidebar: eformidling
 foler: NextMove
+last_updated: Month day, year
 ---
 
 
@@ -12,7 +13,6 @@ foler: NextMove
 
 ##test linking
 
-2
 
 ```json
 {% include /custom/nextmove/something.json %}
