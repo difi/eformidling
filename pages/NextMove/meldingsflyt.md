@@ -31,22 +31,11 @@ sequenceDiagram
     ip->>sr: GET /identifier/{receiverid}
     sr-->>ip: capabilities
     ip-->>fs: capabilities
-    fs->>fs: select capability
-    opt
-        fs->>ip: GET api/prototype/{capability}
-        ip-->>fs: prototype
-    end
-    fs->>fs: Create message
-     
-    alt multipart (<5MB)
-        fs->>ip: POST api/messages/out/
-        ip-->>fs: conversationresponse
-    else large files (>5MB)
-        fs->>ip: POST api/messages/
-        ip-->>fs: conversationresponse
-        fs->>ip: PUT api/messages/out/{conversationId}
-        fs->>ip: POST api/messages/out/{conversationId}
-    end     
+    fs->>fs: select capability  
+
+    fs->>fs: Create message   
+    fs->>ip: POST api/messages/out/
+    ip-->>fs: conversationresponse
     
     ip->>mf: Upload
     loop 
@@ -122,6 +111,16 @@ sequenceDiagram
     fs->>ip: DELETE /in/messages/{conversationId}
 
 </div>
+
+## Status 
+
+En kan finne status på sendte meldinger med GET mot /messages/status/{conversationID}
+Returen vil da være en liste med statser en melding har vært gjennom.
+Statusene vil avhenge av de underliggende meldingsformidlingstjenetene.
+
+*DPO*
+
+*DPF*
 
 
     

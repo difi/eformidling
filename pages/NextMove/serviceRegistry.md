@@ -1,8 +1,7 @@
 ---
 title: ServiceRegistry
 description: Informasjon om ServiceRegistry
-permalink: about.html
-
+permalink: serviceregistry.html
 layout: page
 sidebar: eformidling
 foler: NextMove
