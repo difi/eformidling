@@ -15,8 +15,11 @@ Ved meldinger større enn 5 MB må en for å oppnå god ytelse bruke metoden for
 
 Ved behov kan en få generert prototype på en melding ved GET mot endepunktet api/prototype/{capability}. Denne vil da returnere en preutfylt SBD bestående av SBDH og forettningsmelding
 
-### Små meldinger
 
+
+
+
+### Små meldinger
 
 <div class="mermaid">
 
@@ -82,6 +85,7 @@ sequenceDiagram
 
 </div>
 
+
 ## Motta melding
 
 Når en skal laste ned meldinger fra integrasjonspunktet må dette initieres med en peek, som låser førte meldingen i køen. Dersom en er ute etter meldinger av en bestemt type kan dette gjøres ved å sende med filter for denne 
@@ -121,6 +125,10 @@ Statusene vil avhenge av de underliggende meldingsformidlingstjenetene.
 *DPO*
 
 *DPF*
+
+*DPI*
+
+*DPV*
 
 
     

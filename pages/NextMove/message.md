@@ -1,7 +1,7 @@
 ---
 title: Konvolutt og melding
 description: Beskrivelse av konvolutt og melding
-permalink: /nextmove/message.html
+permalink: message.html
 layout: page
 sidebar: eformidling
 foler: NextMove
