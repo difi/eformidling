@@ -42,7 +42,7 @@ Ferdig konfigurert ser det feks slik ut:
             <name>einnsyn-integrasjonspunkt</name>
             <description>Klient for opplasting av journaldata og nedlasting av innsynskrav</description>
             <argument>-jar</argument>
-            <argument>integrasjonspunkt-1.7.93.jar</argument>
+            <argument>integrasjonspunkt-1.7.94.jar</argument>
             <argument>--app.logger.enableSSL=false</argument>
             <logpath>%BASE%/integrasjonspunkt-logs</logpath>
             <log mode="roll-by-size">
@@ -55,9 +55,9 @@ Ferdig konfigurert ser det feks slik ut:
 
 ### Justere tilgjengelig minne
 
-For å justere hvor mye minne integrasjonspunktet kan bruke så kan dette gjøres ved å endre oppstartkommandoen. Dette kan være veldig nyttig ved forsendelser via eFormidling (dpo,dpv,dpi,dpf) for å være sikker på at applikasjonen har nok minne til å sende større filer. 1GB minne burde holde for eInnsyn, men for eFormidling bør en gjerne sette minst 2GB, gjerne mer. 
+For å justere hvor mye minne integrasjonspunktet kan bruke så kan dette gjøres ved å endre oppstartkommandoen. Dette kan være veldig nyttig ved forsendelser via eFormidling (dpo,dpv,dpi,dpf) for å være sikker på at applikasjonen har nok minne til å sende større filer. 1GB minne burde holde for eInnsyn, men for eFormidling bør en gjerne sette minst 2GB, gjerne mer.  Dette sørger for at alle integrasjonspunkt kan sende og motta filstørrelser inntil 75MB. Det er viktig at alle setter minimum 2GB minne ved bruk av eFormidling.
 
-```-Xmx2048m``` setter minimum antall minne som applikasjonen har tilgjengelig
+```-Xmx2048m``` setter minimum minne som applikasjonen har tilgjengelig
 
 #### fra kommandolinje 
 Du må legge inn ``` -Xmx2048m``` i oppstartskommandoen for å sette feks 2048 MB. Antallet kan justeres til ønske. 
@@ -74,7 +74,7 @@ Feks:
             <name>einnsyn-integrasjonspunkt</name>
             <description>Klient for opplasting av journaldata og nedlasting av innsynskrav</description>
             <argument>-jar</argument>
-            <argument>integrasjonspunkt-1.7.93.jar</argument>
+            <argument>integrasjonspunkt-1.7.94.jar</argument>
             <argument>--app.logger.enableSSL=false</argument>
             <argument>-Xmx2048m</argument>
             <logpath>%BASE%/integrasjonspunkt-logs</logpath>
