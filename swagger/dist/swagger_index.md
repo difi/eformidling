@@ -6,7 +6,6 @@ layout: swagger
 permalink: swagger.html
 ---
 <!-- HTML for static distribution bundle build -->
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
