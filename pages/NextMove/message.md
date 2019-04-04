@@ -111,7 +111,7 @@ Arkivmelding er samlebegrepet
 **Innsynsbegjæring**
 
 ```json
-{% include /custom/nextmove/forettningsmeldingDpeInnsyn.json %}
+{% include /custom/nextmove/forttningsmeldingDpeInnsyn.json %}
 ```
 
 **Møte**
