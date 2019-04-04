@@ -31,22 +31,7 @@ For å sikre høyest mulig kvalitet så tilbyr grensesnittet oppslag mot hvilke 
 Tanken med denne løsningsarkitekturen er at man skal kunne integrere individuelle/tilpassede valideringsløsninger for hver meldingstype. Et annet motiv er at man skal eliminere behovet for virksomhetssertifikater andre plasser enn i integrasjonspunktet.
 
 
-Utgangspunktet er at hver melding består av tre nøstede lag:
 
-<div class="mermaid">
-graph LR
-subgraph Melding
-  subgraph Konvolutt 
-    el1[<b>Standard Business Document Header</b><br/> brukt til ruting av meldingen frem til mottaker]  
-    el2[<b>Forretningsmelding</b><br/>brukt til effektiv håndtering av mottak]
-  end
-  subgraph Innhold
-    el3[<b>ASIC-E med innhold</b><br/>En eller flere filer med strukturert informasjon som skal frem til mottaker]
-  end
-end
-
-
-</div>
 
 
 
