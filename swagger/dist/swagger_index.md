@@ -1,3 +1,10 @@
+---
+title: Swagger dokumentasjon
+description: Swagger dokumentasjon for integrasjonspunktet
+summary: "Swagger dokumentasjon for integrasjonspunktet"
+
+permalink: swagger.html
+---
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
