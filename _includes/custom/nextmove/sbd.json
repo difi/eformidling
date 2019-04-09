@@ -31,17 +31,6 @@
         }
       ]},
       "busninessmessage":{
-          "securitylevel": "3",
-          "isSensitive": "true/false",
-          "senderRef": "",
-          "receiverRef": "",
-          "files" : [{
-              "id":"",
-              "hoveddokument":"true",
-              "mimetype":"",
-              "filnavn":"",
-              "tittel":""
-          }]
       }
     }
   }

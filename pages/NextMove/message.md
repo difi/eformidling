@@ -29,9 +29,26 @@ end
 </div>
 
 
-## SBDH
+## Adressering
+
+Adresseinformasjon gjøres i Standard Business Dockument Header 
+
+```json
+{% include /custom/nextmove/sbd.json %}
+```
+
+| Felt | Beskrivelse | Validering | 
+|-------|--------|---------|
+| HeaderVersion |  |  | 
+| Sender |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+
 
 ## Forettningsmelding
+
+Forettningsmeldingen er spesifikke i forhold til meldingstypene som sendes. 
 
 ## Dokumentpakke
 Payloaden består av en til flere filer man øsker sende. Dette kan være både strukurert og ustrukurert informasjon. 
@@ -43,30 +60,29 @@ Associated Signature Container er et pakkeformat som er designet for å ivareta 
 
 ## Meldingstypene
 
-
-## TEST
-
-<div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Eksempel</a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse noCrossRef">
-                            <div class="panel-body">
-                                ```json
-								{% include /custom/nextmove/forettningsmeldingDpo.json %}
-								```
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel -->
-</div>
-<!-- /.panel-group -->
-
-
-
+| Type | Prosess | Dokumenttype | Beskrivelse
+|-------|--------|---------|-----|
+| <b>Arkivmelding</b> |  urn:no:difi:profile:eFormidling:ver2.0 |  | |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+| <b>Digital post til innbygger</b> | urn:no:difi:profile:Digitalpost:ver1.0 |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+| <b>Digital post til virksomhet</b> |  |  |
+|  |  |  |
+|  |  |  |
+| <b>eInnsyn</b> | urn:no:difi:profile:einnsyn-journalpost:ver1.0 |  |
+|  | urn:no:difi:profile:einnsyn-innsysnkrav:ver1.0 |  |
+|  | urn:no:difi:meeting:ver1.0 |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 
 ## Arkivmelding
