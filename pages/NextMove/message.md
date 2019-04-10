@@ -62,7 +62,7 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 
 | Type | Prosess | Dokumenttype | 
 |------|---------|--------------|
-|  |  | <b>Arkivmelding</b> |  
+|  |  | <b>Arkivmelding</b>  test |  
 |  |urn:no:difi:profile:arkivmelding:ver2.0 |  | 
 |  |urn:no:difi.arkivmelding:xsd:planByggOgGeodata::arkivmelding | |
 |  |urn:no:difi.arkivmelding:xsd:helseSosialOgOmsorg::arkivmelding | |
