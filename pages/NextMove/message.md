@@ -62,7 +62,7 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 
 | Type | Prosess | Dokumenttype | 
 |------|---------|--------------|
-|  |  |<b>Arkivmelding</b>  |  
+| <b>Arkivmelding</b>  |  | |
 |  | | urn:no:difi:profile:arkivmelding:ver2.0 |  
 |  |urn:no:difi.arkivmelding:xsd:planByggOgGeodata::arkivmelding | |
 |  |urn:no:difi.arkivmelding:xsd:helseSosialOgOmsorg::arkivmelding | |
@@ -74,9 +74,9 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 |  |urn:no:difi.arkivmelding:xsd:skatterOgAvgifter::arkivmelding | |
 |  |urn:no:difi.arkivmelding:xsd:tekniskeTjenester::arkivmelding | |
 |  |urn:no:difi.arkivmelding:xsd:administrasjon::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:kvittering::arkivmelding_kvittering | |
-|  |urn:no:difi.arkivmelding:xsd:kvittering::status\* | |
-|  |urn:no:difi.arkivmelding:xsd:kvittering::feil\* | |
+|  | | urn:no:difi.arkivmelding:xsd:kvittering::arkivmelding_kvittering | 
+|  | | urn:no:difi.arkivmelding:xsd:kvittering::status\* | 
+|  | | urn:no:difi.arkivmelding:xsd:kvittering::feil\* | 
 |  |  | |
 | <b>Digital post til innbygger</b> | | |
 |  |urn:no:difi:profile:DigitalpostInfo:ver1.0 ||
