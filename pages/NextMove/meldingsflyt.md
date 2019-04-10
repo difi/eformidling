@@ -122,6 +122,11 @@ En kan finne status på sendte meldinger med GET mot /messages/status/{conversat
 Returen vil da være en liste med statser en melding har vært gjennom.
 Statusene vil avhenge av de underliggende meldingsformidlingstjenetene.
 
+Generelt
+-mottatt lokalt
+-sendt 
+-levert
+
 *DPO*
 
 *DPF*
@@ -130,5 +135,11 @@ Statusene vil avhenge av de underliggende meldingsformidlingstjenetene.
 
 *DPV*
 
+## WebHooks (Under utvikling)
+
+Integrasjonspunktet vil på sikt ha støtte for webhooks slik at man kan abontere på eventer i integrasjonspunktet
+Eventer som vil bli støttet i første omgang er:
+- Innkommende melding
+- Statusending
 
     
