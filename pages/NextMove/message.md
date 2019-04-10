@@ -90,7 +90,7 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 |  |urn:no:difi:profile:einnsyn-journalpost:ver1.0 | |
 |  |  |urn:no:difi.einnsyn:xsd:journal::einnsynmelding |
 |  |  |urn:no:difi.einnsyn:xsd:journal::kvittering |
-|  |urn:no:difi:profile:einnsyn-innsysnkrav:ver1.0 | |
+|  |urn:no:difi:profile:einnsyn-innsynskrav:ver1.0 | |
 |  |  |urn:no:difi.einnsyn:xsd:innsyn::innsynskrav |
 |  |  |urn:no:difi.einnsyn:xsd:innsyn::kvittering |
 |  |urn:no:difi:meeting:ver1.0 |  |
@@ -101,8 +101,8 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 
 ## Arkivmelding
 
-Arkivmeldinger er meldinger som sendes mellom sak-/arkivisystemer bassert på NOARK5 metadata. 
-Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen platform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
+Arkivmeldinger er meldinger som sendes mellom sak-/arkivsystemer basert på NOARK5 metadata. 
+Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen plattform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
 En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Meldingene man ikke ønsker motta vil da routes til virksomhetens postboks i AltInn via DPV.
 
 ```json
@@ -113,7 +113,7 @@ En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle me
 ## Digital post til innbygger
 
 Ved sending av digital post til innbygger må man ta stilling til om meldingen har varslingsplikt eller ikke. Utvidede regler rundt dette finnes her (link).
-Begge prosessene støtter både digtalpost og fysisk post.
+Begge prosessene støtter både digitalpost og fysisk post.
 
 
 **Digital post**
