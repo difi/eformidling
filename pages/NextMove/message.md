@@ -9,11 +9,11 @@ last_updated:  day.month.year
 ---
 
 
-En inndelt i 3 logiske deler - Adressering, forettningsmelding og en dokumentpakke, som er selve meldingen man ønsker sende.
-Adrsseringen og forettningsmeldingen er realisert vet hjelp av Standard Busniness Document.
+En inndelt i tre logiske deler: Adressering, forretningsmelding og dokumentpakke - som er selve meldingen man ønsker sende.
+Adresseringen og forretningsmeldingen er realisert ved hjelp av Standard Business Document.
 
 
-Standard Business Document er en GS1 standard utviklet for å forenkle utveksling av dokumenter i en B2B kontekst. Standardkonvolutten inneholder informasjon for identifisering, adressering og ruting av forretningsmeldingen. SBD er obligatorisk i neste versjon av PEPPOL infrastrukturen for fakturaformidling.
+Standard Business Document er en GS1 standard utviklet for å forenkle utveksling av dokumenter i en B2B kontekst. Standardkonvolutten inneholder informasjon for identifisering, adressering og routing av forretningsmeldingen. SBD er obligatorisk i neste versjon av PEPPOL-infrastrukturen for fakturaformidling.
 
 <div class="mermaid">
 graph LR
@@ -31,7 +31,7 @@ end
 
 ## Adressering
 
-Adresseinformasjon gjøres i Standard Business Dockument Header 
+Adresseinformasjon legges i Standard Business Document Header. 
 
 ```json
 {% include /custom/nextmove/sbd.json %}
@@ -46,16 +46,16 @@ Adresseinformasjon gjøres i Standard Business Dockument Header
 |  |  |  | 
 
 
-## Forettningsmelding
+## Forretningsmelding
 
-Forettningsmeldingen er spesifikke i forhold til meldingstypene som sendes. 
+Forretningsmeldingene er spesifikke i forhold til meldingstypene som sendes. 
 
 ## Dokumentpakke
-Payloaden består av en til flere filer man øsker sende. Dette kan være både strukurert og ustrukurert informasjon. 
+Payloaden består av en til flere filer man ønsker sende. Dette kan være både strukturert og ustrukturert informasjon. 
 
-Dokumentpakken realiseres ved hjelp av Assosiated Signatur Container
+Dokumentpakken realiseres ved hjelp av Associated Signature Containers.
 
-Associated Signature Container er et pakkeformat som er designet for å ivareta integritet til innholdet over lang tid. Kort fortalt så definerer standarden hvordan man skal sette sammen en zip fil med en filstruktur der man lager en digital signatur hver enkel fil med en kombinasjon av et digitalt fingeravtrykk av filen og et PKI sertifikat eid av en virksomheten. Dette medfører at man kan verifisere at filene kommer fra rett virksomhet, og om filene har blitt endret.
+Associated Signature Containers er et pakkeformat som er designet for å ivareta integriteten til innholdet over lang tid. Kort fortalt definerer standarden hvordan man skal sette sammen en zip-fil med en filstruktur der man lager en digital signatur for hver enkelt fil med en kombinasjon av et digitalt fingeravtrykk av filen og et PKI-sertifikat eid av en virksomhet. Dette medfører at man kan verifisere at filene kommer fra rett virksomhet, og om de har blitt endret etter signering.
 
 
 ## Meldingstypene
@@ -101,9 +101,9 @@ Associated Signature Container er et pakkeformat som er designet for å ivareta 
 
 ## Arkivmelding
 
-Arkivmelding er meldinger som sendes mellom sak-/arkivisystemer bassert på NOARK5 metadata. 
-Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers prefererte mottaksplatform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne taes ibruk. Dersom mottaker ikke er knyttet til annen platform vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
-En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Medlingene man ikke ønsker motta vil da routes til virksomhetens postboks i AltInn via DPV
+Arkivmeldinger er meldinger som sendes mellom sak-/arkivisystemer bassert på NOARK5 metadata. 
+Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen platform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
+En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Meldingene man ikke ønsker motta vil da routes til virksomhetens postboks i AltInn via DPV.
 
 ```json
 {% include /custom/nextmove/forettningsmeldingDpo.json %}
@@ -112,8 +112,8 @@ En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle me
 
 ## Digital post til innbygger
 
-Ved sending av digital post til innbygger må man ta stilling til om meldingen har varslingsplikt eller ikke. Utvidet regler rundt dette finnes her (link)
-Begge prosesser støtter både digtalpost og fysisk post
+Ved sending av digital post til innbygger må man ta stilling til om meldingen har varslingsplikt eller ikke. Utvidede regler rundt dette finnes her (link).
+Begge prosessene støtter både digtalpost og fysisk post.
 
 
 **Digital post**
