@@ -148,7 +148,7 @@ vedtak = meldinger som medfører varslingsplikt
 |urn:no:difi:profile:einnsyn:meeting:ver1.0 |  |
 |  |urn:no:difi.einnsyn:xsd::publisering |
 |urn:no:difi:profile:einnsyn:response:ver1.0 | |
-|  |urn:no:difi.einnsyn:xsd::publisering_kvittering |
+|  |urn:no:difi.einnsyn:xsd::einnsyn_kvittering |
 |  |urn:no:difi.eformidling:xsd::status\* |
 |  |urn:no:difi.eformidling:xsd::feil\* |
 
