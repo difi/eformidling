@@ -60,96 +60,95 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 
 ## Meldingstypene
 
-| Type | Prosess | Dokumenttype | 
-|------|---------|--------------|
-| <b>Arkivmelding</b>  |  | |
-|  |urn:no:difi:profile:planByggOgGeodata | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:helseSosialOgOmsorg::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:oppvekstOgUtdanning::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:kulturIdrettOgFritid::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:trafikkReiserOgSamferdsel::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:naturOgMiljø::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:næringsutvikling::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:skatterOgAvgifter::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:tekniskeTjenester::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |urn:no:difi:profile:administrasjon::arkivmelding | |
-|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
-|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |  | urn:no:difi.arkivmelding:xsd::status\* |
-|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
-|  |  | |
-| <b>Digital post til innbygger</b> | | |
-|  |urn:no:difi:profile:DigitalpostInfo:ver1.0 ||
-|  |  |urn:no:difi.digitalpost:xsd:digital::digital |
-|  |  |urn:no:difi.digitalpost:xsd:fysisk::print |
-|  |urn:no:difi:profile:DigitalpostMedVarslingsplikt:ver1.0 ||
-|  |  |urn:no:difi.digitalpost:xsd:digital::digital |
-|  |  |urn:no:difi.digitalpost:xsd:fysisk::print |
-|  |  |  |
-| <b>eInnsyn</b> | | |
-|  |urn:no:difi:profile:einnsyn-journalpost:ver1.0 | |
-|  |  |urn:no:difi.einnsyn:xsd:journal::einnsynmelding |
-|  |  |urn:no:difi.einnsyn:xsd:journal::kvittering |
-|  |urn:no:difi:profile:einnsyn-innsynskrav:ver1.0 | |
-|  |  |urn:no:difi.einnsyn:xsd:innsyn::innsynskrav |
-|  |  |urn:no:difi.einnsyn:xsd:innsyn::kvittering |
-|  |urn:no:difi:meeting:ver1.0 |  |
-|  |  |urn:no:difi.einnsyn:xsd:meeting::einnsynmelding |
-|  |  |urn:no:difi.einnsyn:xsd:meeting::kvittering |
 
-\* dokumenttypen er forbeholdt kontrollmeldinger i infrastrukturen og skal ikke brukes av integrasjoner
 
-## Arkivmelding
+### Arkivmelding
 
 Arkivmeldinger er meldinger som sendes mellom sak-/arkivsystemer basert på NOARK5 metadata. 
 Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen plattform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
 En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Meldingene man ikke ønsker motta vil da routes til virksomhetens postboks i AltInn via DPV.
 
+| Prosess | Dokumenttype | 
+|---------|--------------|
+|urn:no:difi:profile:arkivmelding:planByggOgGeodata:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:helseSosialOgOmsorg:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:oppvekstOgUtdanning:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:kulturIdrettOgFritid:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:trafikkReiserOgSamferdsel:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:naturOgMiljø:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:næringsutvikling:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:skatterOgAvgifter:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:tekniskeTjenester:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:arkivmelding:administrasjon:ver1.0 | |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+
+\* dokumenttypen er forbeholdt kontrollmeldinger i infrastrukturen og skal ikke brukes av integrasjoner
+
+
 ```json
 {% include /custom/nextmove/forettningsmeldingDpo.json %}
 ```
 
+- betyding av felter 
+- mapping mot dpv
+- mapping til ks
 
-## Digital post til innbygger
+
+### Digital post til innbygger
 
 Ved sending av digital post til innbygger må man ta stilling til om meldingen har varslingsplikt eller ikke. Utvidede regler rundt dette finnes her (link).
 Begge prosessene støtter både digitalpost og fysisk post.
+
+Info = informasjonsmelinger uten varlingsplikt
+vedtak = meldinger som medfører varslingsplikt
+
+| Prosess | Dokumenttype | 
+|---------|--------------|
+|urn:no:difi:profile:digitalpost:info:ver1.0 | |
+|  |urn:no:difi.digitalpost:xsd:digital::digital|
+|  |urn:no:difi.digitalpost:xsd:fysisk::print |
+|urn:no:difi:profile:digitalpost:vedtak:ver1.0 | |
+|  |urn:no:difi.digitalpost:xsd:digital::digital|
+|  |urn:no:difi.digitalpost:xsd:fysisk::print|
 
 
 **Digital post**
@@ -164,7 +163,27 @@ Begge prosessene støtter både digitalpost og fysisk post.
 ```
 
 
-## eInnsyn
+### eInnsyn
+
+| Prosess | Dokumenttype | 
+|---------|--------------|
+|urn:no:difi:profile:einnsyn:journalpost:ver1.0 | |
+|  |urn:no:difi.einnsyn:xsd::publisering |
+|  |urn:no:difi.einnsyn:xsd::einnsyn_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:einnsyn:innsynskrav:ver1.0 | |
+|  |urn:no:difi.einnsyn:xsd::innsynskrav |
+|  |urn:no:difi.einnsyn:xsd::einnsyn_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+|urn:no:difi:profile:einnsyn:meeting:ver1.0 |  |
+|  |urn:no:difi.einnsyn:xsd::publisering |
+|  |urn:no:difi.einnsyn:xsd::publisering_kvittering |
+|  |urn:no:difi.eformidling:xsd::status\* |
+|  |urn:no:difi.eformidling:xsd::feil\* |
+
+\* dokumenttypen er forbeholdt kontrollmeldinger i infrastrukturen og skal ikke brukes av integrasjoner
 
 **Journal**
 
