@@ -63,20 +63,56 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 | Type | Prosess | Dokumenttype | 
 |------|---------|--------------|
 | <b>Arkivmelding</b>  |  | |
-|  | | urn:no:difi:profile:arkivmelding:ver2.0 |  
-|  |urn:no:difi.arkivmelding:xsd:planByggOgGeodata::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:helseSosialOgOmsorg::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:oppvekstOgUtdanning::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:kulturIdrettOgFritid::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:trafikkReiserOgSamferdsel::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:naturOgMiljø::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:næringsutvikling::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:skatterOgAvgifter::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:tekniskeTjenester::arkivmelding | |
-|  |urn:no:difi.arkivmelding:xsd:administrasjon::arkivmelding | |
-|  | | urn:no:difi.arkivmelding:xsd:kvittering::arkivmelding_kvittering | 
-|  | | urn:no:difi.arkivmelding:xsd:kvittering::status\* | 
-|  | | urn:no:difi.arkivmelding:xsd:kvittering::feil\* | 
+|  |urn:no:difi:profile:planByggOgGeodata | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:helseSosialOgOmsorg::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:oppvekstOgUtdanning::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:kulturIdrettOgFritid::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:trafikkReiserOgSamferdsel::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:naturOgMiljø::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:næringsutvikling::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:skatterOgAvgifter::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:tekniskeTjenester::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
+|  |urn:no:difi:profile:administrasjon::arkivmelding | |
+|  |  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |  | urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
+|  |  | urn:no:difi.arkivmelding:xsd::status\* |
+|  |  | urn:no:difi.arkivmelding:xsd::feil\* |
 |  |  | |
 | <b>Digital post til innbygger</b> | | |
 |  |urn:no:difi:profile:DigitalpostInfo:ver1.0 ||
