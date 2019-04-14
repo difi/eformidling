@@ -24,14 +24,14 @@ For å teste meldingsformidlere som ender i  en postkasse er det api og gui på 
 
 ## Staging
 
-Etter man er ferig med testing internt vil det vil man kunne teste dette i staging ved å gjøre oppsett for staging. I staging vil det være en SaMock tilgjengelig som en når ved å adressere til en predeffinert mottaker. En vil på denne måte kunne se at en får sendt melding til annet integrsjonspunkt på en reell infrasturktur. En vil via SaMock i stagin også kunne sende meldinger tilbake til seg selv
+Etter intern testing vil en kunne teste dette i staging ved å gjøre oppsett for staging. I staging vil det være en SaMock tilgjengelig som en når ved å adressere til en predeffinert mottaker. En vil på denne måte kunne se at en får sendt melding til annet integrsjonspunkt på en reell infrasturktur. En vil via SaMock i stagin også kunne sende meldinger tilbake til seg selv
 
 
  {% include /custom/nextmove/test_staging.jpg %}
 
 
 
- Dokumentasjon for oppsett og kjøring av MoveMocks og SaMocks finnes (her)[https://github.com/difi/move-mocks]
+ Dokumentasjon for oppsett og kjøring av MoveMocks og SaMocks finnes (her)[https://github.com/difi/move-mocks].
 
 
 
