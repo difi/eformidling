@@ -106,6 +106,30 @@ entries:
     output: web
     folderitems:
 
+    - title: Om NextMove
+      url: /about.html
+      output: web
+     
+    - title: Meldingsflyt
+      url: /meldingsflyt.html
+      output: web
+
+    - title: Meldingsoppbygging
+      url: /message.html
+      output: web
+
+    - title: Grensesnitt
+      url: /integrasjonspunkt-api-v2.0.html
+      output: web
+
+    - title: Sikkerhet
+      url: /security.html
+      output: web
+
+    - title: Testing
+      url: /testing.html
+      output: web
+
 #      - title: Arkivmeldingen
 #        url: /arkivmeldingen.html
 #        output: web

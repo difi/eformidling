@@ -37,14 +37,6 @@ Adresseinformasjon legges i Standard Business Document Header.
 {% include /custom/nextmove/sbd.json %}
 ```
 
-| Felt | Beskrivelse | Validering | 
-|-------|--------|---------|
-| HeaderVersion |  |  | 
-| Sender |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-
 
 ## Foretningsmelding
 
