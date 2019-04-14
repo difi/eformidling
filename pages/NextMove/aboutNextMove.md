@@ -2,7 +2,7 @@
 ---
 title: NextMove
 description: Beskrivelse av forretningsmeldinger
-permalink: aboutNextMove.html
+permalink: aboutnextmove.html
 layout: page
 sidebar: eformidling
 foler: NextMove

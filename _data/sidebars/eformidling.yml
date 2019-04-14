@@ -107,7 +107,7 @@ entries:
     folderitems:
 
     - title: Om NextMove
-      url: /aboutNextMove.html
+      url: /aboutnextmove.html
       output: web
      
     - title: Meldingsflyt
