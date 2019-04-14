@@ -10,12 +10,10 @@ foler: NextMove
 ## Sende melding
 NextMove APIet lar deg sende filer på to måter. Hvilke av de du velger avhenger av størrelsen på meldingen du skal sende. 
 
-Dersom meldingen er opp til 5 MB brukes multipart sending, der en kan sende forettningsmelding og payload i samme kall. 
+Dersom meldingen er opp til 5 MB brukes multipart sending, der en kan sende forretningsmelding og payload i samme kall. 
 Ved meldinger større enn 5 MB må en for å oppnå god ytelse bruke metoden for store meldinger
 
-Ved behov kan en få generert prototype på en melding ved GET mot endepunktet api/prototype/{capability}. Denne vil da returnere en preutfylt SBD bestående av SBDH og forettningsmelding
-
-
+Ved behov kan en få generert prototype på en melding ved GET mot endepunktet api/prototype/{capability}. Denne vil da returnere et pre utfylt SBD bestående av SBDH og forretningsmelding
 
 
 
@@ -119,27 +117,49 @@ sequenceDiagram
 ## Status 
 
 En kan finne status på sendte meldinger med GET mot /messages/status/{conversationID}
-Returen vil da være en liste med statser en melding har vært gjennom.
-Statusene vil avhenge av de underliggende meldingsformidlingstjenetene.
+Returen vil da være en liste med statuser en melding har vært gjennom.
+Statusene vil avhenge av de underliggende meldingsformidlingstjenestene.
 
-Generelt
--mottatt lokalt
--sendt 
--levert
+Sending
 
-*DPO*
+|Verdi|Beskrivelse|
+|-----|-----------|
+|OPPRETTET|Medling mottatt i integrasjonspunktet fra fagsystem og lagt på kø|
+|SENDT|Melding sendt |
+|MOTTATT|Melding lastet ned og lagt på kø hos mottaker|
+|LEVERT|Melding lastet ned fra mottakers kø|
+|LEST|Mottaker har lest medlingen / sendt applikasjonskvittering|
+
+Avvik
+
+|Verdi|Beskrivelse|
+|-----|-----------|
+|TTL_EXPIRED|
+
+Mottak
+
+
+
+
+*DPO / DPE*
 
 *DPF*
 
+For meldinger som sendes til FIKS platformen med svar ut gjelder følgende mapping
+
+|Verdi|Beskrivelse|
+|-----|-----------|
+
+https://ks-no.github.io/svarut/integrasjon/forsendelsesservicev10/#status
+
 *DPI*
 
-*DPV*
 
 ## WebHooks (Under utvikling)
 
-Integrasjonspunktet vil på sikt ha støtte for webhooks slik at man kan abontere på eventer i integrasjonspunktet
-Eventer som vil bli støttet i første omgang er:
+Integrasjonspunktet vil så fort som mulig få støtte for webhooks, slik at man kan abonnere på hendelser i integrasjonspunktet
+Hendelser som vil bli støttet i første omgang er:
 - Innkommende melding
-- Statusending
+- Statusendring
 
     

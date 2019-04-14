@@ -46,12 +46,13 @@ Adresseinformasjon legges i Standard Business Document Header.
 |  |  |  | 
 
 
-## Forretningsmelding
+## Foretningsmelding
 
-Forretningsmeldingene er spesifikke i forhold til meldingstypene som sendes. 
+Fortetningsmeldingen inneholder meldingsformidlingsspesifikk informasjon. Dette er informasjon som ikke krypters og dermed kan brukes til f.eks. routing av meldingen, samt som beslutningsgrunnlag ved mottak av meldingen. 
 
 ## Dokumentpakke
-Payloaden består av en til flere filer man ønsker sende. Dette kan være både strukturert og ustrukturert informasjon. 
+
+Payloaden består av en til flere filer man ønsker å sende. Dette kan være både strukturert og ustrukturert informasjon. 
 
 Dokumentpakken realiseres ved hjelp av Associated Signature Containers.
 
@@ -61,12 +62,12 @@ Associated Signature Containers er et pakkeformat som er designet for å ivareta
 ## Meldingstypene
 
 
-
 ### Arkivmelding
 
 Arkivmeldinger er meldinger som sendes mellom sak-/arkivsystemer basert på NOARK5 metadata. 
-Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonpunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen plattform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
-En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Meldingene man ikke ønsker motta vil da routes til virksomhetens postboks i AltInn via DPV.
+Dersom mottaker ikke har integrasjonspunkt vil avsenders integrasjonspunkt mappe meldingen til mottakers foretrukne mottaksplattform. I første omgang vil dette i hovedsak dreie seg SvarInn og SvarInn2 etterhvert som denne tas i bruk. Dersom mottaker ikke er knyttet til en annen plattform, vil meldingen sendes til Digital postkasse for virksomheter (DPV). 
+En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle meldingstyper i sitt integrasjonspunkt. Meldingene man ikke ønsker å motta vil da routes til virksomhetens postboks i AltInn via DPV.
+
 
 | Prosess | Dokumenttype | 
 |---------|--------------|
