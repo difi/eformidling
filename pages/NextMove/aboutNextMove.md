@@ -1,4 +1,3 @@
-
 ---
 title: NextMove
 description: Beskrivelse av forretningsmeldinger
