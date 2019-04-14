@@ -126,6 +126,9 @@ entries:
       url: /security.html
       output: web
 
+    - title: Testing
+      url: /testing.html
+      output: web
 
 #      - title: Arkivmeldingen
 #        url: /arkivmeldingen.html
