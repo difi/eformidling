@@ -107,7 +107,7 @@ entries:
     folderitems:
 
     - title: Om NextMove
-      url: /about.html
+      url: /aboutNextMove.html
       output: web
      
     - title: Meldingsflyt
@@ -126,9 +126,6 @@ entries:
       url: /security.html
       output: web
 
-    - title: Testing
-      url: /testing.html
-      output: web
 
 #      - title: Arkivmeldingen
 #        url: /arkivmeldingen.html
