@@ -73,9 +73,9 @@ En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle me
 |  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:trafikkReiserOgSamferdsel:ver1.0 | |
 |  |urn:no:difi:arkivmelding:xsd::arkivmelding |
-|urn:no:difi:profile:arkivmelding:naturOgMiljø:ver1.0 | |
+|urn:no:difi:profile:arkivmelding:naturOgMiljo:ver1.0 | |
 |  |urn:no:difi:arkivmelding:xsd::arkivmelding |
-|urn:no:difi:profile:arkivmelding:næringsutvikling:ver1.0 | |
+|urn:no:difi:profile:arkivmelding:naeringsutvikling:ver1.0 | |
 |  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:skatterOgAvgifter:ver1.0 | |
 |  |urn:no:difi:arkivmelding:xsd::arkivmelding |
