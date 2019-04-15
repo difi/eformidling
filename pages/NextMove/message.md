@@ -64,29 +64,29 @@ En kan som mottaker med integrasjonspunkt velge at en ikke ønsker motta alle me
 | Prosess | Dokumenttype | 
 |---------|--------------|
 |urn:no:difi:profile:arkivmelding:planByggOgGeodata:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:helseSosialOgOmsorg:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:oppvekstOgUtdanning:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:kulturIdrettOgFritid:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:trafikkReiserOgSamferdsel:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:naturOgMiljø:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:næringsutvikling:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:skatterOgAvgifter:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:tekniskeTjenester:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:administrasjon:ver1.0 | |
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding |
 |urn:no:difi:profile:arkivmelding:response:ver1.0 | | 
-|  |urn:no:difi.arkivmelding:xsd::arkivmelding_kvittering |
-|  |urn:no:difi.eformidling:xsd::status\* |
-|  |urn:no:difi.eformidling:xsd::feil\* |
+|  |urn:no:difi:arkivmelding:xsd::arkivmelding_kvittering |
+|  |urn:no:difi:eformidling:xsd::status\* |
+|  |urn:no:difi:eformidling:xsd::feil\* |
 
 \* dokumenttypen er forbeholdt kontrollmeldinger i infrastrukturen og skal ikke brukes av integrasjoner
 
@@ -111,11 +111,11 @@ vedtak = meldinger som medfører varslingsplikt
 | Prosess | Dokumenttype | 
 |---------|--------------|
 |urn:no:difi:profile:digitalpost:info:ver1.0 | |
-|  |urn:no:difi.digitalpost:xsd:digital::digital|
-|  |urn:no:difi.digitalpost:xsd:fysisk::print |
+|  |urn:no:difi:digitalpost:xsd:digital::digital|
+|  |urn:no:difi:digitalpost:xsd:fysisk::print |
 |urn:no:difi:profile:digitalpost:vedtak:ver1.0 | |
-|  |urn:no:difi.digitalpost:xsd:digital::digital|
-|  |urn:no:difi.digitalpost:xsd:fysisk::print|
+|  |urn:no:difi:digitalpost:xsd:digital::digital|
+|  |urn:no:difi:digitalpost:xsd:fysisk::print|
 
 
 **Digital post**
@@ -135,15 +135,15 @@ vedtak = meldinger som medfører varslingsplikt
 | Prosess | Dokumenttype | 
 |---------|--------------|
 |urn:no:difi:profile:einnsyn:journalpost:ver1.0 | |
-|  |urn:no:difi.einnsyn:xsd::publisering |
+|  |urn:no:difi:einnsyn:xsd::publisering |
 |urn:no:difi:profile:einnsyn:innsynskrav:ver1.0 | |
-|  |urn:no:difi.einnsyn:xsd::innsynskrav |
+|  |urn:no:difi:einnsyn:xsd::innsynskrav |
 |urn:no:difi:profile:einnsyn:meeting:ver1.0 |  |
-|  |urn:no:difi.einnsyn:xsd::publisering |
+|  |urn:no:difi:einnsyn:xsd::publisering |
 |urn:no:difi:profile:einnsyn:response:ver1.0 | |
-|  |urn:no:difi.einnsyn:xsd::einnsyn_kvittering |
-|  |urn:no:difi.eformidling:xsd::status\* |
-|  |urn:no:difi.eformidling:xsd::feil\* |
+|  |urn:no:difi:einnsyn:xsd::einnsyn_kvittering |
+|  |urn:no:difi:eformidling:xsd::status\* |
+|  |urn:no:difi:eformidling:xsd::feil\* |
 
 \* dokumenttypen er forbeholdt kontrollmeldinger i infrastrukturen og skal ikke brukes av integrasjoner
 
