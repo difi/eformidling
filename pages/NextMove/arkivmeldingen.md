@@ -15,8 +15,8 @@ Fagsystem arkiverer ferdige elementer og bryr seg deretter ikke mer om de arkive
 Dette samsvarte godt med behovet Difi hadde i forbindelse med eFormidling. Det ble derfor avtalt at Difi skulle se videre på standardisering av denne meldingen opp mot Arkivverket. 
 
 For mer informasjon om arkivmelding:
-- [arkivmelding.xsd](https://github.com/difi/eformidling/blob/gh-pages/resources/arkivmelding/arkivmelding.xsd) er selve definisjonen. 
-- [metadatakatalog.xsd](https://github.com/difi/eformidling/blob/gh-pages/resources/arkivmelding/metadatakatalog.xsd) definerer metadataelementer og denne er hentet uendret fra Noark5-standarden.
+- [arkivmelding.xsd]({{ site.url }}/resources/arkivmelding/arkivmelding.xsd) er selve definisjonen. 
+- [metadatakatalog.xsd]({{ site.url }}/resources/arkivmelding/metadatakatalog.xsd) definerer metadataelementer og denne er hentet uendret fra Noark5-standarden.
 
 Arkivmelding.xsd tar utgangspunkt i objektene mappe og registrering i Noark5, samt spesialiseringer av disse, men vi har valgt å gruppere inn noen elementer i mappe og registrering, istedenfor slik de er i Noark5 – der de er plassert utenfor – dette gjelder spesielt klassifikasjon samt referanse til eksisterende mapper i strukturen.
 
