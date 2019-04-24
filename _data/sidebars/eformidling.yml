@@ -119,7 +119,7 @@ entries:
       output: web
 
     - title: Grensesnitt
-      external_url: /integrasjonspunkt-api-v2.0.html
+      external_url: /eformidling/integrasjonspunkt-api-v2.0.html
       output: web
 
     - title: Sikkerhet
