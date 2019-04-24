@@ -118,9 +118,9 @@ entries:
       url: /message.html
       output: web
 
-#    - title: Grensesnitt
-#      url: /integrasjonspunkt-api-v2.0.html
-#      output: web
+    - title: Grensesnitt
+      external_url: /integrasjonspunkt-api-v2.0.html
+      output: web
 
     - title: Sikkerhet
       url: /security.html
