@@ -5,7 +5,6 @@ summary: "Swagger dokumentasjon for integrasjonspunktet"
 layout: swagger-ui
 permalink: swagger.html
 ---
-<!DOCTYPE html>
 <html>
   <head>
     <title>ReDoc</title>
