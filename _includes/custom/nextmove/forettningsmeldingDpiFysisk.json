@@ -1,11 +1,5 @@
-{
-    "mottaker":{
-        "person": {
-           "personidentifikator": "01013300001",
-           "postkasseadresse": "ola.nordmann#0ABC"
-        }
-    },      
-    "fysiskpostinfo" : {
+{      
+    "print" : {
         "mottaker":{
             "navn": "Hentes fra capabilitylookup",
             "adresselinje1": "Hentes fra capabilitylookup",

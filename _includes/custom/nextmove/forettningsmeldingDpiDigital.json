@@ -1,24 +1,20 @@
-{  
-    "mottaker":{
-        "person": {
-           "personidentifikator": "01013300001",
-           "postkasseadresse": "ola.nordmann#0ABC"
-        }
-    },
-    "nonSensitiveTitle": "",
-    "language": "NO",
-    "digitalPostInfo" : {
-        "virkningsdato": "",
-        "virkningstidspunkt": "",
-        "aapningskvittering": "false"
-    },
-    "mandetoryNotefication": "false",
-    "notefication":{
-        "email": {
-            "text": "Varseltekst"
+{
+    "digital": {
+        "sikkerhetsnivaa": "",
+        "ikkeSensitivTittel": "",
+        "spraak": "NO",
+        "digitalPostInfo": {
+            "virkningsdato": "",
+            "virkningstidspunkt": "",
+            "aapningskvittering": "false"
         },
-        "sms": {
-            "text": "Varseltekst"
+        "varsler": {
+            "epost": {
+                "tekst": "Varseltekst"
+            },
+            "sms": {
+                "tekst": "Varseltekst"
+            }
         }
-    }     
+    }
 }

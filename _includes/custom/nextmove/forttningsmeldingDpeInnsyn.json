@@ -1,4 +1,6 @@
 {
-    "orgnumber":"991825827",
-    "email":"test@example.com"
+    "innsynskrav": {
+        "orgnumber": "991825827",
+        "email": "test@example.com"
+    }
 }

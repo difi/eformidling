@@ -1,36 +1,45 @@
 {
-    "StandardBusinessDocument": {
-      "StandardBusinessDocumentHeader": {
-        "HeaderVersion": "1.0",
-        "Sender": {
-          "Identifier": {
-            "Authority": "iso6523-actorid-upis",
-            "ID": "9908:<orgnr>"
-          }
+    "standardBusinessDocument": {
+        "standardBusinessDocumentHeader": {
+            "headerVersion": "1.0",
+            "sender": {
+                "identifier": {
+                    "authority": "iso6523-actorid-upis",
+                    "value": "0192:<orgnr>"
+                }
+            },
+            "receiver": {
+                "identifier": {
+                    "authority": "iso6523-actorid-upis",
+                    "value": "0192:<orgnr>"
+                }
+            },
+            "documentIdentification": {
+                "standard": "urn:no:difi:<meldingstype>:xsd::forretningsmelding",
+                "typeVersion": "1.0",
+                "instanceIdentifier": "ff88849c-e281-4809-8555-7cd54952b916",
+                "type": "forretningsmelding",
+                "creationDateAndTime": "20xx-04-11T15:29:58.753+02:00"
+            },
+            "businessScope": [
+                {
+                    "type": "ConversationId",
+                    "instanceIdentifier": "37efbd4c-413d-4e2c-bbc5-257ef4a65a45",
+                    "identifier": "rn:no:difi:profile:arkivmelding:<område>:ver1.0",
+                    "correlationInformation": {
+                        "expectedResponseDateTime": "20xx-05-10T00:31:52Z"
+                    }
+                },
+                {
+                    "type": "senderRef",
+                    "value": "uuid"
+                },
+                {
+                    "type": "senderRef",
+                    "value": "uuid"
+                }
+            ]
         },
-        "Receiver": {
-          "Identifier": {
-            "Authority": "iso6523-actorid-upis",
-            "ID": "9908:<orgnr>"
-          }
-        },
-        "DocumentIdentification": {
-          "Standard": "urn:no:difi:profile:arkivmelding:<område>:ver1.0",
-          "TypeVersion": "1.0",
-          "InstanceIdentifier": "ff88849c-e281-4809-8555-7cd54952b916",
-          "Type": "busninessmessage", 
-          "CreationDateAndTime": "2016-04-11T15:29:58.753+02:00"
-        },
-        "BusinessScope": [{
-          "Type": "ConversationId",
-          "InstanceIdentifier": "37efbd4c-413d-4e2c-bbc5-257ef4a65a45",
-          "Identifier": "rn:no:difi:profile:arkivmelding:<område>:ver1.0",
-          "CorrelationInformation": {
-            "ExpectedResponseDateTime": "2003-05-10T00:31:52Z" 
-          }         
-        }
-      ]},
-      "busninessmessage":{
-      }
+        "forretningsmelding": {}
     }
-  }
+}
