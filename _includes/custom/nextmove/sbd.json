@@ -31,12 +31,12 @@
                     }
                 },
                 {
-                    "type": "senderRef",
-                    "value": "uuid"
+                    "type": "SenderRef",
+                    "identifier": "<UUID>"
                 },
                 {
-                    "type": "senderRef",
-                    "value": "uuid"
+                    "type": "ReceiverRef",
+                    "identfier": "<UUID>"
                 }
             ]
         },
