@@ -1,6 +1,7 @@
 {
     "digital": {
         "sikkerhetsnivaa": "",
+        "primaryDocumentFilename": "",
         "ikkeSensitivTittel": "",
         "spraak": "NO",
         "digitalPostInfo": {
@@ -9,12 +10,8 @@
             "aapningskvittering": "false"
         },
         "varsler": {
-            "epost": {
-                "tekst": "Varseltekst"
-            },
-            "sms": {
-                "tekst": "Varseltekst"
-            }
+            "epostTekst": "Varseltekst",
+            "smsTekst": "Varseltekst"
         }
     }
 }
