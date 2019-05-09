@@ -112,9 +112,11 @@ vedtak = meldinger som medfører varslingsplikt
 |---------|--------------|
 |urn:no:difi:profile:digitalpost:info:ver1.0 | |
 |  |urn:no:difi:digitalpost:xsd:digital::digital|
+|  |urn:no:difi:digitalpost:xsd:digital::digital_dpv|
 |  |urn:no:difi:digitalpost:xsd:fysisk::print |
 |urn:no:difi:profile:digitalpost:vedtak:ver1.0 | |
 |  |urn:no:difi:digitalpost:xsd:digital::digital|
+|  |urn:no:difi:digitalpost:xsd:digital::digital_dpv|
 |  |urn:no:difi:digitalpost:xsd:fysisk::print|
 
 
