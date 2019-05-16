@@ -25,7 +25,7 @@
                 "landkode": "Hentes fra capabilitylookup",
                 "land": "Hentes fra capabilitylookup"
             },
-            "postHaandtering": "DIREKTE_RETUR"
+            "returhaandtering": "DIREKTE_RETUR"
         } 
     }  
 }
