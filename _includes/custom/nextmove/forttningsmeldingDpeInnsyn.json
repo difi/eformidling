@@ -1,6 +1,6 @@
 {
     "innsynskrav": {
-        "orgnumber": "991825827",
-        "email": "test@example.com"
+        "orgnr": "991825827",
+        "epost": "test@example.com"
     }
 }
