@@ -5,7 +5,7 @@ summary: "Difis løsning for meldingsutveksling i offentlig forvalting"
 permalink: index.html
 layout: page
 sidebar: eformidling
-redirect_to: "https://difi.github.io/felleslosninger"
+redirect_to: https://difi.github.io/felleslosninger/
 ---
 
 ## Bakgrunn
