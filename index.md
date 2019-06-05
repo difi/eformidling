@@ -3,10 +3,9 @@ title: eFormidling fra Difi
 description: Difis løsning for meldingsutveksling i offentlig forvalting
 summary: "Difis løsning for meldingsutveksling i offentlig forvalting"
 permalink: index.html
-redirect_to: https://difi.github.io/felleslosninger/
 layout: page
 sidebar: eformidling
-isHome: true
+redirect_to: https://difi.github.io/felleslosninger/
 ---
 
 ## Bakgrunn
