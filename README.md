@@ -1,11 +1,11 @@
-## Dokumentasjon av eFormidling
+---
+title: Installasjonsveiledning for integrasjonpunktet
 
-Formatert dokumentasjon finner du  [her](https://difi.github.io/eformidling/).
+sidebar: eformidling_install_sidebar
+permalink: eformidling_download_ip.html
+redirect_to: https://difi.github.io/felleslosninger/
 
-Kjøre lokalt via docker 
+---
 
-```
-docker-compose build --no-cache && docker-compose up
-```
+Gå hit: https://difi.github.io/felleslosninger/eformidling_download_ip.html 
 
-Siten vil da kjøre på [http://localhost:4000/](http://localhost:4000/).
