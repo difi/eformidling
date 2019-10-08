@@ -1,8 +1,6 @@
 ---
 title: Installasjonsveiledning for integrasjonpunktet
-
-sidebar: eformidling_install_sidebar
-permalink: eformidling_download_ip.html
+permalink: index.html
 redirect_to: https://difi.github.io/felleslosninger/
 
 ---
